@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUT 27 Prices | Live Market Data</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body {
+      background: #0a0e14;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .prices-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      background: #111827;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid #1f2937;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+    .filter-bar input, .filter-bar select {
+      background: #1f2937;
+      color: #f3f4f6;
+      border: 1px solid #374151;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .filter-bar input {
+      flex: 1;
+      min-width: 200px;
+    }
+    .prices-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+    .prices-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .price-card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .price-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price-card-name {
+      font-weight: 600;
+      color: #f8fafc;
+      font-size: 16px;
+    }
+    .price-card-ovr {
+      background: #1e293b;
+      color: #38bdf8;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .price-card-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+    .price-card-price {
+      font-size: 18px;
+      font-weight: 700;
+      color: #4ade80;
+    }
+    .price-card-change {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .price-card-change.positive {
+      color: #4ade80;
+    }
+    .price-card-change.negative {
+      color: #f87171;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-brand"><a href="/">MADDEN 27 MUT SNIPER</a></div>
+    <div class="nav-links">
+      <a href="/snipes" class="nav-link">Live Snipes</a>
+      <a href="/cards" class="nav-link">Database</a>
+      <a href="/binder" class="nav-link">Binder</a>
+      <a href="/prices" class="nav-link active">Prices</a>
+      <a href="/link-ea" class="nav-link">Link EA</a>
+    </div>
+  </nav>
+
+  <div class="prices-container">
+    <div class="filter-bar">
+      <input type="text" id="priceSearch" placeholder="Search player name...">
+      <select id="posFilter">
+        <option value="">All Positions</option>
+      </select>
+      <select id="progFilter">
+        <option value="">All Programs</option>
+      </select>
+      <select id="sortFilter">
+        <option value="ovr">Highest OVR</option>
+        <option value="price_asc">Cheapest Price</option>
+        <option value="price_desc">Highest Price</option>
+        <option value="name_asc">Name A-Z</option>
+      </select>
+    </div>
+
+    <div class="prices-meta-row">
+      <div id="pricesMeta">Loading prices...</div>
+      <div id="priceCount"></div>
+    </div>
+
+    <div id="pricesGrid" class="prices-grid"></div>
+  </div>
+
+  <script src="/nav.js"></script>
+  <script>
+    async function loadPrices() {
+      const resp = await fetch('/api/prices/overall');
+      const data = await resp.json();
+      const players = data.data || [];
+      
+      document.getElementById('pricesMeta').textContent = `Showing ${players.length} players with prices`;
+      document.getElementById('priceCount').textContent = `Platform: ${data.platform || 'xbsx'}`;
+      
+      const grid = document.getElementById('pricesGrid');
+      grid.innerHTML = players.map(p => `
+        <div class="price-card">
+          <div class="price-card-header">
+            <div class="price-card-name">${p.firstName || ''} ${p.lastName || ''}</div>
+            <div class="price-card-ovr">${p.overall || '?'}</div>
+          </div>
+          <div class="price-card-details">
+            <div>Position: ${p.gamePosition?.abbreviation || p.gamePosition?.name || 'N/A'}</div>
+            <div>Program: ${p.program?.name || 'N/A'}</div>
+          </div>
+          <div class="price-card-price">${p.xbsxPriceDisplay || 'Unknown'}</div>
+          <div class="price-card-change ${(p.xbsxPercentChange || 0) >= 0 ? 'positive' : 'negative'}">
+            ${(p.xbsxPercentChange || 0) >= 0 ? '+' : ''}${p.xbsxPercentChange || '0.0'}%
+          </div>
+        </div>
+      `).join('');
+    }
+
+    loadPrices();
+  </script>
+</body>
+</html>

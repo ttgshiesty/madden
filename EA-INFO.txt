@@ -1,0 +1,28 @@
+x-amz-id-2
+OFOb4E7VyAnEk+IcHZaLhpBPw8/bRgwzKl7wQB6R3XBeVxV+MhAd86DB4jpmW8cvHpDBkMx+sFsCophymTiILwCYxeR/nGEB
+
+
+https://utas.external.s2.ea.com/ut/game/mut27/auctionhouse/?player
+
+ curl http://www.easports.com/madden-nfl/ultimate-team/web-app/data/1/auctions/1009292 | python -mjson.tool
+
+
+players/11309-luke-kuechly/27-101011309/
+
+
+
+
+ curl http://www.easports.com/madden-nfl/ultimate-team/web-app/data/1/auctions/ | python -mjson.tool
+
+
+https://www.mut.gg/binder/home/?code=QUOxANtzWcMLdvnK7rZdgQiLvZgpJSyBsXs3PndIAQ
+
+QUOxANtzWcMLdvnK7rZdgQiLvZgpJSyBsXs3PndIAQ
+
+
+https://api.mutdashboard.com/p/s/?ip=0&_=1786849410881&ver=1.345.2&compression=gzip-js
+
+
+https://api.mutdashboard.com/p/s/?ip=0&_=1786849306951&ver=1.345.2&compression=gzip-js
+
+https://api.mutdashboard.com/p/i/v0/e/?ip=0&_=1786849306958&ver=1.345.2&compression=gzip-js

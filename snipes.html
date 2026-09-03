@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Reddit Pixel -->
+    <script>
+    !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j07x9te81rv0",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_j07x9te81rv0');rdt('track', 'PageVisit');
+    </script>
+    <!-- End Reddit Pixel -->
+    <!-- PostHog -->
+    <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mTG5CzwKeksAWmiww4eamcwVkAazixCmtKYaYkGXGGjo',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only',disable_session_recording:true});
+    </script>
+    <title>Live Snipe Feed — MUT Alpha</title>
+    <meta name="description" content="Catch underpriced Madden Ultimate Team cards as they list. 5 min/day free, founding members get unlimited.">
+    <link rel="canonical" href="https://mut.shiesty.me/snipes">
+    <link rel="stylesheet" href="/styles.css?v=136">
+    <style>
+        /* Page-local styles. Kept here while /snipes2 is the staging route. */
+        .s2-wrap { max-width: 1100px; margin: 24px auto 16px; padding: 0 20px; }
+        .s2-card { background: #0c0f0c; border: 1px solid #1a3a1a; border-radius: 12px; padding: 14px 20px; }
+        .s2-card h1 { font-size: 18px; margin: 0 0 10px; color: #fff; }
+        .s2-card p { color: #aaa; font-size: 13px; line-height: 1.55; margin: 0 0 16px; }
+        /* Horizontal layout for the authenticated state: state | budget | tier | actions | upgrade */
+        .s2-card-bar { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+        .s2-card-bar > * { margin: 0 !important; }
+        .s2-card-bar .s2-state-badge, .s2-card-bar .s2-budget-pill, .s2-card-bar .s2-tier-pill { margin: 0 !important; }
+        .s2-card-bar .s2-nudge { margin: 0; padding: 6px 10px; }
+        .s2-card-bar .s2-actions { flex-shrink: 0; }
+        .s2-card-label { font-size: 10px; color: #555; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 2px; }
+        .s2-card-bar-budget { font-family: monospace; font-size: 28px; color: #00ff00; font-weight: 700; line-height: 1; letter-spacing: 1px; }
+        .s2-card-bar-budget.s2-budget-unlimited { font-size: 22px; }
+        .s2-card-bar-spacer { flex: 1; }
+        .s2-card-bar-footer { font-size: 11px; color: #666; margin-left: auto; }
+        .s2-card-bar-footer a { color: #888; text-decoration: none; }
+        .s2-card-bar-footer a:hover { color: #00ff00; }
+        @media (max-width: 720px) {
+          .s2-card-bar { gap: 12px; }
+          .s2-card-bar-spacer { display: none; }
+          .s2-card-bar-budget { font-size: 22px; }
+          .s2-card-bar-footer { width: 100%; margin-left: 0; text-align: center; }
+        }
+        .s2-btn { display: inline-block; padding: 10px 20px; background: #003300; border: 1px solid #00ff00; color: #00ff00; border-radius: 8px; font-weight: 700; font-size: 13px; cursor: pointer; text-decoration: none; }
+        .s2-btn:hover { background: #004400; }
+        .s2-btn[disabled] { opacity: 0.4; cursor: not-allowed; }
+        .s2-btn-google { display: inline-flex; align-items: center; gap: 10px; padding: 11px 22px; background: #fff; border: 1px solid #ddd; color: #1f1f1f; border-radius: 8px; font-weight: 600; font-size: 14px; cursor: pointer; text-decoration: none; }
+        .s2-btn-google:hover { background: #f7f7f7; }
+        .s2-btn-google svg { width: 18px; height: 18px; flex-shrink: 0; }
+        .s2-budget { font-size: 40px; font-weight: 700; font-family: monospace; color: #00ff00; margin: 0 0 2px; letter-spacing: 2px; line-height: 1.1; }
+        .s2-budget-meta { font-size: 11px; color: #777; margin-bottom: 16px; }
+        .s2-budget-unlimited { font-size: 32px; letter-spacing: 4px; background: linear-gradient(90deg, #ffd54a 0%, #00ff00 50%, #ffd54a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .s2-meta-founding { color: #ffd54a; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .s2-state-badge { display: inline-block; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
+        .s2-budget-pill { margin: 4px 0 18px; }
+        .s2-tier-pill { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .s2-tier-free { background: #1a1a1a; color: #999; border: 1px solid #333; }
+        .s2-tier-founding { background: #2a1f00; color: #ffd54a; border: 1px solid #ffd54a; }
+        .s2-nudge { display: inline-block; margin-top: 14px; font-size: 12px; color: #888; text-decoration: none; padding: 4px 8px; border-radius: 4px; transition: color 150ms; }
+        .s2-nudge:hover { color: #00ff00; }
+        .s2-nudge-urgent { color: #ffd54a; font-weight: 700; animation: s2-nudge-pulse 1.4s ease-in-out infinite; }
+        @keyframes s2-nudge-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+        .s2-state-idle { background: #1a1a1a; color: #aaa; }
+        .s2-state-running { background: #003300; color: #00ff00; position: relative; padding-left: 18px; animation: s2-pulse 1.6s ease-in-out infinite; }
+        .s2-state-running::before { content: ''; position: absolute; left: 8px; top: 50%; transform: translateY(-50%); width: 6px; height: 6px; background: #00ff00; border-radius: 50%; box-shadow: 0 0 8px #00ff00; }
+        @keyframes s2-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.45); } 50% { box-shadow: 0 0 0 6px rgba(0, 255, 0, 0); } }
+        /* Floating +N indicator when new snipes land */
+        .s2-pop { position: fixed; pointer-events: none; background: #003300; border: 1px solid #00ff00; color: #00ff00; padding: 8px 14px; border-radius: 20px; font-weight: 800; font-size: 14px; z-index: 1050; opacity: 0; transform: translateY(10px); transition: opacity 200ms, transform 200ms; }
+        .s2-pop.s2-pop-show { opacity: 1; transform: translateY(0); }
+        .s2-state-paused { background: #332a00; color: #d4b97a; }
+        .s2-actions { display: flex; gap: 8px; justify-content: center; }
+        .s2-footer { margin-top: 16px; font-size: 12px; color: #555; }
+        .s2-footer a { color: #777; }
+        .s2-loading { color: #555; }
+        .s2-teaser { display: flex; gap: 10px; margin: 0 0 24px; }
+        .s2-teaser-tile { flex: 1; background: #0a0d0a; border: 1px solid #1a3a1a; border-radius: 8px; padding: 12px 6px; }
+        .s2-teaser-num { font-size: 22px; font-weight: 700; color: #00ff00; font-family: monospace; line-height: 1.1; }
+        .s2-teaser-label { font-size: 10px; color: #888; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        /* Feed-first layout: feed spans the full top row; filters + heatmap
+           sit side-by-side below it. Aligns the visual hierarchy with the
+           product priority (feed is the hero, sidebars are reference). */
+        .s2-grid { max-width: 1280px; margin: 8px auto 40px; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+        .s2-grid[hidden] { display: none; }
+        @media (max-width: 700px) { .s2-grid { grid-template-columns: 1fr; } }
+        .s2-side { background: #0a0d0a; border: 1px solid #1a3a1a; border-radius: 8px; padding: 16px 14px; }
+        .s2-side-title { font-size: 11px; color: #aaa; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 12px; font-weight: 700; }
+        /* Custom dropdown — replaces native <select> so the popup stays
+           inside our visual box and inherits the dark/green theme. */
+        .s2-dd { position: relative; }
+        .s2-dd-btn { width: 100%; background: #0a0d0a; border: 1px solid #222; border-radius: 4px; color: #ccc; padding: 5px 8px; font-size: 11px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left; }
+        .s2-dd-btn:hover { border-color: #1a3a1a; }
+        .s2-dd.s2-dd-open .s2-dd-btn { border-color: #00ff00; color: #00ff00; }
+        .s2-dd-chev { color: #555; font-size: 9px; transition: transform 120ms; }
+        .s2-dd.s2-dd-open .s2-dd-chev { transform: rotate(180deg); color: #00ff00; }
+        .s2-dd-menu { position: absolute; top: calc(100% + 4px); left: 0; right: 0; background: #0a0d0a; border: 1px solid #00ff00; border-radius: 4px; z-index: 50; max-height: 200px; overflow-y: auto; padding: 4px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6); display: none; }
+        .s2-dd.s2-dd-open .s2-dd-menu { display: block; }
+        .s2-dd-opt { display: block; width: 100%; text-align: left; background: transparent; border: none; color: #aaa; padding: 5px 8px; font-size: 11px; cursor: pointer; border-radius: 3px; }
+        .s2-dd-opt:hover { background: #1a3a1a; color: #fff; }
+        .s2-dd-opt.s2-dd-selected { background: #003300; color: #00ff00; font-weight: 700; }
+        /* Filters */
+        .s2-f-row { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+        .s2-f-label { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; align-items: baseline; }
+        .s2-f-val { color: #00ff00; font-family: monospace; font-weight: 700; font-size: 12px; }
+        .s2-f-range { width: 100%; -webkit-appearance: none; height: 4px; background: #1a1a1a; border-radius: 2px; outline: none; }
+        .s2-f-range::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; background: #00ff00; border-radius: 50%; cursor: pointer; }
+        .s2-f-range::-moz-range-thumb { width: 14px; height: 14px; background: #00ff00; border-radius: 50%; cursor: pointer; border: none; }
+        .s2-f-reset { width: 100%; background: transparent; border: 1px solid #333; color: #888; padding: 6px; border-radius: 4px; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; cursor: pointer; text-transform: uppercase; margin-top: 4px; }
+        .s2-f-reset:hover { border-color: #00ff00; color: #00ff00; }
+        /* Collapsible filter header */
+        .s2-f-head { display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; margin: 0 0 12px; }
+        .s2-f-head .s2-side-title { margin: 0; }
+        .s2-f-chev { color: #666; font-size: 10px; transition: transform 150ms; }
+        .s2-f-collapsed .s2-f-chev { transform: rotate(-90deg); }
+        .s2-f-active { color: #00ff00; font-size: 10px; font-weight: 700; margin-left: 6px; }
+        .s2-f-body { transition: opacity 150ms; }
+        .s2-f-collapsed .s2-f-body { display: none; }
+        /* Pill grids (position + program) */
+        .s2-f-section { margin-top: 14px; padding-top: 12px; border-top: 1px solid #1a1a1a; }
+        .s2-f-section-title { font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; font-weight: 700; }
+        .s2-f-pills { display: flex; flex-wrap: wrap; gap: 4px; }
+        .s2-f-pgroup { color: #444; font-size: 9px; font-weight: 700; padding: 4px 2px; display: inline-block; }
+        .s2-f-p { background: transparent; border: 1px solid #2a2a2a; color: #888; padding: 3px 7px; border-radius: 10px; font-size: 10px; font-weight: 700; cursor: pointer; letter-spacing: 0.3px; transition: all 100ms; }
+        .s2-f-p:hover { border-color: #444; color: #ccc; }
+        .s2-f-p.s2-on { background: #003300; border-color: #00ff00; color: #00ff00; }
+        /* Mobile: compact budget panel */
+        @media (max-width: 700px) {
+            .s2-wrap { max-width: 100%; margin: 16px auto 12px; padding: 0 12px; }
+            .s2-card { padding: 12px 14px; }
+            .s2-card h1 { font-size: 13px; margin: 0 0 6px; }
+            .s2-card p { font-size: 11px; margin: 0 0 10px; }
+            .s2-budget { font-size: 28px; letter-spacing: 1px; }
+            .s2-budget-unlimited { font-size: 22px; letter-spacing: 2px; }
+            .s2-budget-meta { font-size: 10px; margin-bottom: 8px; }
+            .s2-budget-pill { margin: 2px 0 10px; }
+            .s2-state-badge { padding: 2px 8px; font-size: 10px; margin-bottom: 10px; }
+        }
+        /* Feed spans both columns at the top of the grid. */
+        .s2-feed { grid-column: 1 / -1; padding: 0; max-width: none; margin: 0; }
+        .s2-feed-title { font-size: 13px; color: #aaa; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 14px; text-align: center; font-weight: 700; }
+        .s2-feed-stats { display: flex; gap: 8px; align-items: baseline; justify-content: center; margin: 0 0 10px; font-size: 12px; color: #888; }
+        .s2-stat-num { color: #00ff00; font-weight: 700; font-family: monospace; font-size: 14px; }
+        .s2-stat-lbl { color: #777; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .s2-stat-sep { color: #333; }
+        /* Heatmap */
+        .s2-hm-controls { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+        .s2-hm-tabs { display: flex; gap: 4px; background: #0a0d0a; border-radius: 6px; padding: 2px; }
+        .s2-hm-tab { flex: 1; background: transparent; border: none; color: #666; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+        .s2-hm-tab:hover { color: #aaa; }
+        .s2-hm-tab.s2-hm-active { background: #003300; color: #00ff00; }
+        .s2-hm-input { background: #0a0d0a; border: 1px solid #222; border-radius: 4px; color: #aaa; padding: 4px 6px; font-size: 11px; width: 100%; box-sizing: border-box; }
+        .s2-hm-row { display: flex; gap: 6px; }
+        .s2-hm-row > * { flex: 1; }
+        .s2-hm-peak { color: #00ff00; font-size: 11px; font-weight: 700; margin-bottom: 8px; min-height: 14px; }
+        .s2-hm-bars { display: flex; align-items: flex-end; gap: 2px; height: 110px; padding: 14px 0 0; }
+        .s2-hm-bar { flex: 1; background: linear-gradient(to top, #003300, #00ff00); border-radius: 1px 1px 0 0; min-height: 2px; position: relative; transition: opacity 150ms; }
+        .s2-hm-bar:hover { opacity: 0.7; }
+        .s2-hm-bar.s2-hm-current { outline: 1px solid #ffd54a; }
+        .s2-hm-bar-count { position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); font-size: 10px; color: #aaa; font-family: monospace; white-space: nowrap; margin-bottom: 2px; }
+        .s2-hm-labels { display: flex; gap: 2px; margin-top: 4px; font-size: 9px; color: #777; }
+        .s2-hm-labels span { flex: 1; text-align: center; }
+        .s2-hm-empty { color: #666; font-size: 12px; text-align: center; padding: 20px 8px; }
+        /* Heatmap tooltip — floats with cursor */
+        .s2-hm-tip { position: fixed; pointer-events: none; background: #0a0d0a; border: 1px solid #00ff00; border-radius: 6px; padding: 8px 10px; font-size: 11px; color: #ddd; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7); z-index: 950; opacity: 0; transition: opacity 100ms ease; min-width: 130px; }
+        .s2-hm-tip.s2-visible { opacity: 1; }
+        .s2-hm-tip-label { color: #00ff00; font-weight: 700; font-size: 12px; margin-bottom: 4px; letter-spacing: 0.5px; }
+        .s2-hm-tip-row { display: flex; justify-content: space-between; gap: 12px; line-height: 1.45; }
+        .s2-hm-tip-key { color: #888; }
+        .s2-hm-tip-val { color: #fff; font-family: monospace; }
+        .s2-feed-placeholder { text-align: center; color: #555; font-size: 13px; padding: 32px 16px; border: 1px dashed #1a3a1a; border-radius: 8px; }
+        .s2-snipe { display: flex; align-items: center; gap: 12px; background: #0a0d0a; border: 1px solid #1a3a1a; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+        .s2-snipe-img { width: 60px; height: 80px; object-fit: contain; flex-shrink: 0; background: #000; border-radius: 4px; }
+        .s2-snipe-info { flex: 1; min-width: 0; text-align: left; }
+        .s2-snipe-name { color: #fff; font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .s2-snipe-ovr { color: #00ff00; font-weight: 700; font-size: 12px; margin-left: 6px; }
+        .s2-snipe-meta { color: #888; font-size: 11px; margin-top: 2px; }
+        .s2-snipe-prices { color: #aaa; font-size: 12px; margin-top: 4px; font-family: monospace; }
+        .s2-snipe-list { color: #00ff00; }
+        .s2-snipe-vs { color: #555; margin: 0 6px; }
+        .s2-snipe-median { color: #aaa; }
+        .s2-snipe-hist { margin-top: 6px; font-size: 10px; line-height: 1.5; font-family: monospace; }
+        .s2-snipe-hist-row { color: #888; display: flex; gap: 8px; align-items: baseline; }
+        .s2-snipe-hist-lbl { color: #555; font-weight: 700; letter-spacing: 0; min-width: 58px; }
+        .s2-snipe-hist-none { color: #444; font-style: italic; }
+        .s2-snipe-platform { margin-left: 8px; color: #d8f275; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+        .s2-snipe-right { text-align: right; flex-shrink: 0; }
+        .s2-snipe-profit { color: #00ff00; font-weight: 700; font-size: 15px; font-family: monospace; }
+        .s2-snipe-badge { font-size: 10px; font-weight: 700; letter-spacing: 1px; margin-top: 4px; padding: 2px 6px; border-radius: 4px; display: inline-block; }
+        .s2-badge-buy { background: #003300; color: #00ff00; }
+        .s2-badge-mustbuy { background: #4d3a00; color: #ffd54a; }
+        /* Filter pills above the feed */
+        .s2-feed-controls { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 14px; }
+        .s2-filters { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+        .s2-filter-console .s2-filter-pill { min-width: 58px; }
+        .s2-filter-pill { background: transparent; border: 1px solid #333; color: #888; padding: 5px 14px; border-radius: 14px; font-size: 11px; font-weight: 700; letter-spacing: 1px; cursor: pointer; transition: all 150ms; }
+        .s2-filter-pill:hover { border-color: #555; color: #aaa; }
+        .s2-filter-on { background: #003300; border-color: #00ff00; color: #00ff00; }
+        .s2-filter-on:hover { background: #004400; border-color: #00ff00; color: #00ff00; }
+        /* Status tags on individual cards */
+        .s2-snipe-sold { opacity: 0.6; }
+        .s2-snipe-expired { opacity: 0.45; }
+        .s2-snipe-status { display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 1px; padding: 1px 6px; border-radius: 3px; margin-left: 6px; vertical-align: middle; }
+        .s2-status-sold { background: #1a2a4d; color: #6b9eff; }
+        .s2-status-expired { background: #2a1a1a; color: #ff8a8a; }
+        /* Depletion paywall */
+        .s2-paywall { background: linear-gradient(180deg, #0c1a0c 0%, #0a0d0a 100%); border: 1px solid #00ff00; border-radius: 12px; padding: 36px 24px; text-align: center; box-shadow: 0 0 24px rgba(0, 255, 0, 0.08); }
+        .s2-paywall-eyebrow { font-size: 11px; color: #00ff00; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 12px; }
+        .s2-paywall-headline { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 16px; }
+        .s2-paywall-spots { color: #ffd54a; font-size: 13px; font-weight: 600; margin-bottom: 20px; letter-spacing: 0.5px; }
+        .s2-paywall-btn { display: inline-block; padding: 14px 32px; background: #00ff00; border: none; color: #000; border-radius: 8px; font-weight: 800; font-size: 15px; cursor: pointer; text-decoration: none; letter-spacing: 0.5px; }
+        .s2-paywall-btn:hover { background: #66ff66; }
+        .s2-paywall-reset { color: #666; font-size: 11px; margin-top: 16px; }
+        /* Upgrade modal — Stripe embedded checkout */
+        .s2-modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.75); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; z-index: 1000; opacity: 0; pointer-events: none; transition: opacity 220ms ease; }
+        .s2-modal-backdrop.s2-visible { opacity: 1; pointer-events: auto; }
+        .s2-modal { background: #0a0d0a; border: 1px solid #1a3a1a; border-radius: 12px; padding: 24px; width: min(520px, 92vw); max-height: 92vh; overflow: auto; position: relative; transform: scale(0.96); transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6); }
+        .s2-modal-backdrop.s2-visible .s2-modal { transform: scale(1); }
+        .s2-modal-close { position: absolute; top: 10px; right: 12px; background: transparent; border: none; color: #888; font-size: 22px; cursor: pointer; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; line-height: 1; }
+        .s2-modal-close:hover { color: #fff; background: rgba(255,255,255,0.08); }
+        .s2-modal-loading { text-align: center; color: #888; padding: 60px 20px; font-size: 13px; }
+        .s2-modal-error { color: #ff6b6b; text-align: center; padding: 40px 20px; font-size: 14px; }
+        /* Success toast after onComplete */
+        .s2-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px); background: #003300; border: 1px solid #00ff00; color: #00ff00; padding: 12px 20px; border-radius: 8px; font-weight: 700; font-size: 14px; z-index: 1100; opacity: 0; transition: opacity 200ms ease, transform 200ms ease; pointer-events: none; }
+        .s2-toast.s2-visible { opacity: 1; transform: translateX(-50%) translateY(0); }
+        /* Market-detail modal */
+        .s2-modal-detail { width: min(640px, 95vw); padding: 28px 24px 22px; }
+        .s2-d-head { display: flex; gap: 14px; align-items: center; margin-bottom: 18px; }
+        .s2-d-img { width: 96px; height: 128px; object-fit: contain; background: #000; border-radius: 6px; flex-shrink: 0; }
+        .s2-d-title { color: #fff; font-size: 20px; font-weight: 700; }
+        .s2-d-sub { color: #888; font-size: 13px; margin-top: 2px; }
+        .s2-d-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 18px; }
+        .s2-d-stat { background: #0a0d0a; border: 1px solid #1a3a1a; border-radius: 6px; padding: 10px 8px; text-align: center; }
+        .s2-d-stat-num { color: #00ff00; font-weight: 700; font-family: monospace; font-size: 15px; }
+        .s2-d-stat-label { color: #888; font-size: 9px; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .s2-d-section { margin-top: 16px; }
+        .s2-d-section-title { color: #aaa; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+        .s2-d-list { max-height: 200px; overflow-y: auto; border: 1px solid #1a1a1a; border-radius: 6px; }
+        .s2-d-row { display: flex; justify-content: space-between; padding: 6px 12px; border-bottom: 1px solid #1a1a1a; font-size: 12px; }
+        .s2-d-row:last-child { border-bottom: none; }
+        .s2-d-row-price { color: #00ff00; font-family: monospace; }
+        .s2-d-row-time { color: #777; }
+        .s2-d-empty { padding: 14px; text-align: center; color: #666; font-size: 12px; }
+        .s2-snipe { cursor: pointer; transition: background-color 120ms; }
+        .s2-snipe:hover { background-color: #0d1410; }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <nav>
+        <a href="/"><img src="/logo.png" alt="MUT Alpha"></a>
+        <div class="nav-links">
+            <a href="/cards" class="nav-link">Players</a>
+            <a href="/build" class="nav-link">Team Builder <span class="nav-badge">NEW</span></a>
+            <a href="/binder" class="nav-link">Binder</a>
+            <a href="/snipes" class="nav-link">Snipes</a>
+            <a href="/pricing" class="nav-link">Pricing</a>
+            <a href="https://discord.gg/HWpMmQeXFP" class="nav-link" target="_blank">Discord</a>
+            <a href="/snipes" class="nav-cta">Try Snipes Free</a>
+        </div>
+    </nav>
+
+    <div class="s2-wrap">
+        <div class="s2-card" id="s2Card">
+            <p class="s2-loading">Loading…</p>
+        </div>
+    </div>
+
+    <div class="s2-grid" id="s2Grid" hidden>
+        <div class="s2-feed" id="s2Feed">
+            <div class="s2-feed-stats" id="s2FeedStats">
+                <span class="s2-stat"><span class="s2-stat-num" id="s2StatLive">—</span> <span class="s2-stat-lbl">live now</span></span>
+                <span class="s2-stat-sep">·</span>
+                <span class="s2-stat"><span class="s2-stat-num" id="s2StatHour">—</span> <span class="s2-stat-lbl">in past hour</span></span>
+                <span class="s2-stat-sep">·</span>
+                <span class="s2-stat"><span class="s2-stat-num" id="s2StatProfit">—</span> <span class="s2-stat-lbl">median profit</span></span>
+            </div>
+            <div class="s2-feed-title">Live Feed</div>
+            <div id="s2FeedList"></div>
+        </div>
+
+        <aside class="s2-side s2-f-collapsed" id="s2LeftCol">
+            <div class="s2-f-head" id="s2FHead">
+                <div><span class="s2-side-title">Filters</span><span class="s2-f-active" id="s2FActive"></span></div>
+                <span class="s2-f-chev">&#9660;</span>
+            </div>
+            <div class="s2-f-body">
+                <div class="s2-f-row">
+                    <label class="s2-f-label">Min OVR</label>
+                    <div class="s2-dd" id="s2FOvr"></div>
+                </div>
+                <div class="s2-f-row">
+                    <label class="s2-f-label">Min Profit</label>
+                    <input type="number" id="s2FProfit" placeholder="e.g. 1000" min="1000" step="1000" class="s2-hm-input">
+                    <div class="s2-f-pills s2-f-profit-pills" id="s2FProfitPills"></div>
+                </div>
+                <div class="s2-f-row">
+                    <label class="s2-f-label">Sort</label>
+                    <div class="s2-dd" id="s2FSort"></div>
+                </div>
+                <div class="s2-f-section">
+                    <div class="s2-f-section-title">Market</div>
+                    <div class="s2-f-pills" id="s2FPlatformPills"></div>
+                </div>
+                <div class="s2-f-section">
+                    <div class="s2-f-section-title">Position</div>
+                    <div class="s2-f-pills" id="s2FPosPills"></div>
+                </div>
+                <div class="s2-f-section">
+                    <div class="s2-f-section-title">Program</div>
+                    <div class="s2-f-pills" id="s2FProgPills"><span style="color:#555;font-size:11px">Loading…</span></div>
+                </div>
+                <button id="s2FReset" class="s2-f-reset">Reset All</button>
+            </div>
+        </aside>
+
+        <aside class="s2-side" id="s2RightCol">
+            <div class="s2-side-title">Best Times to Snipe</div>
+            <div class="s2-hm-controls">
+                <div class="s2-hm-tabs">
+                    <button class="s2-hm-tab s2-hm-active" data-view="hour">By Hour</button>
+                    <button class="s2-hm-tab" data-view="day">By Day</button>
+                </div>
+                <div class="s2-hm-row">
+                    <div class="s2-dd" id="s2HmDays"></div>
+                </div>
+            </div>
+            <div class="s2-hm-peak" id="s2HmPeak"></div>
+            <div class="s2-hm-bars" id="s2HmBars"></div>
+            <div class="s2-hm-labels" id="s2HmLabels"></div>
+        </aside>
+    </div>
+
+    <div class="s2-modal-backdrop" id="s2ModalBackdrop">
+        <div class="s2-modal" id="s2Modal" role="dialog" aria-modal="true">
+            <button class="s2-modal-close" id="s2ModalClose" aria-label="Close">&times;</button>
+            <div id="s2CheckoutMount">
+                <div class="s2-modal-loading">Loading checkout&hellip;</div>
+            </div>
+        </div>
+    </div>
+    <div class="s2-modal-backdrop" id="s2DetailBackdrop">
+        <div class="s2-modal s2-modal-detail" id="s2DetailModal" role="dialog" aria-modal="true">
+            <button class="s2-modal-close" id="s2DetailClose" aria-label="Close">&times;</button>
+            <div id="s2DetailContent">
+                <div class="s2-modal-loading">Loading market data&hellip;</div>
+            </div>
+        </div>
+    </div>
+    <div class="s2-toast" id="s2Toast">You&rsquo;re upgraded &mdash; unlimited minutes unlocked.</div>
+    <div class="s2-hm-tip" id="s2HmTip"></div>
+    <div class="s2-pop" id="s2Pop"></div>
+
+    <footer>
+        <p>&copy; 2026 MUT Alpha. Not affiliated with EA Sports.</p>
+        <p style="margin-top:8px;"><a href="/">Home</a> | <a href="/pricing">Pricing</a> | <a href="/discord">Discord</a></p>
+    </footer>
+
+    <script src="/img-proxy.js?v=1"></script>
+    <script src="/snipes.js?v=106"></script>
+    <script src="/alert-modal.js?v=5"></script>
+    <script src="/nav.js?v=7" defer></script>
+    <script src="/analytics.js?v=3" defer></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"a647481526904081b34b101798792a04","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>

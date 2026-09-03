@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <!-- PostHog -->
+    <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_mTG5CzwKeksAWmiww4eamcwVkAazixCmtKYaYkGXGGjo',{api_host:'https://us.i.posthog.com',person_profiles:'identified_only',disable_session_recording:true});
+    </script>
+
+    <title>My Binder — MUT Alpha</title>
+    <meta name="description" content="Your SHIESTY-MUT binder — every card you've marked owned, with live prices.">
+    <link rel="canonical" href="https://mut.shiesty.me/binder">
+    <link rel="preconnect" href="https://eaassets-a.akamaihd.net" crossorigin>
+    <link rel="stylesheet" href="/styles.css?v=106">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0631460872341601" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <nav>
+        <a href="/"><img src="/logo.png" alt="MUT Alpha"></a>
+        <div class="nav-links">
+            <a href="/cards" class="nav-link">Players</a>
+            <a href="/build" class="nav-link">Team Builder <span class="nav-badge">NEW</span></a>
+            <a href="/binder" class="nav-link">Binder</a>
+            <a href="/snipes" class="nav-link">Snipes</a>
+            <a href="/pricing" class="nav-link">Pricing</a>
+            <a href="https://discord.gg/HWpMmQeXFP" class="nav-link" target="_blank">Discord</a>
+            <a href="/snipes" class="nav-cta">Try Snipes Free</a>
+        </div>
+    </nav>
+
+    <main class="binder-main-wrap">
+        <h1>MY BINDER</h1>
+        <p class="subtitle">Cards you've marked <span class="highlight">★ owned</span> on SHIESTY-MUT — with live market prices.</p>
+
+        <div class="binder-disclaimer">
+            <strong>Note:</strong> this reflects only cards you've manually marked on SHIESTY-MUT. Real EA-binder sync ships with EA Connect (in development).
+        </div>
+
+        <div class="binder-summary" id="binderSummary">
+            <div class="binder-stat"><span class="binder-stat-label">Cards</span><span class="binder-stat-value" id="binderCount">—</span></div>
+            <div class="binder-stat"><span class="binder-stat-label">Total value</span><span class="binder-stat-value gold" id="binderValue">—</span></div>
+            <div class="binder-search-wrap">
+                <input type="text" id="binderAddInput" class="binder-add-input" placeholder="Find a card to add to your binder…" autocomplete="off">
+                <div id="binderAddDropdown" class="binder-add-dropdown" hidden></div>
+            </div>
+        </div>
+
+        <div class="binder-list" id="binderList">
+            <div class="loading"><div class="spinner"></div><p>Loading your binder…</p></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MUT Alpha. Not affiliated with EA Sports.</p>
+        <p style="margin-top:8px;"><a href="/">Home</a> | <a href="/cards">Cards</a> | <a href="/build">Team Builder</a> | <a href="/snipes">Snipes</a></p>
+    </footer>
+
+    <script src="/img-proxy.js?v=1" defer></script>
+    <script src="/cards.js?v=20" defer></script>
+    <script src="/binder.js?v=3" defer></script>
+    <script src="/binder-client.js?v=1" defer></script>
+    <script src="/nav.js?v=7" defer></script>
+    <script src="/analytics.js?v=3" defer></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"a647481526904081b34b101798792a04","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>
