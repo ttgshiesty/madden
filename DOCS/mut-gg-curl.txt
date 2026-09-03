@@ -1,0 +1,218 @@
+192.168.1.236
+port 3074
+dns 192.168.1.1
+subnet 25.255.255.0
+
+
+
+
+curl --url 'https://www.mut.gg/api/mutdb/prices/overall/playeritem/?external_ids=101022247%2C111022247' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: no-cache' \
+  -b 'usprivacy=1YNY; _lc2_fpi=645e522c6bb7--01kzwf5jgtmakfy5vs02r9dr1d; _lc2_fpi_meta=%7B%22w%22%3A1786588088859%7D; _lr_env_src_ats=false; _ga=GA1.1.1726403531.1786588089; panoramaId_expiry=1787192889304; _cc_id=e85d97fee406ccc7beec3510537e1df1; panoramaId=e283c671b5052c45fdced5ae876916d539382457e44145ae0e7fac2697e6f3f6; _scor_uid=e61bc105b84a4f2f870a123f0fb62f58; _ga_DCD7QPW0Z2=deleted; csrftoken=PNFzQ9irInUWN0EyJtFloSyxf6h1g72U; sessionid=m3hyd5221cqvq2ijboi4gfxeh2ljzbqe; _li_dcdm_c=.mut.gg; __binsUID=4ec1e5f7-30b8-49a5-8dfd-2f71d34742b3; cf_clearance=QhLjewp1LlRruVK4VvtOAGzhhSaKILtFmRtTtfquShQ-1786917251-1.2.1.1-K_3Ss5Ab0auqZq2RChbgrdGntM89noNKQTcy5sblzm3kmorKNaXZdd1Fwqv3hYg58z_4PfRtr78WDk.6pd2xMcu5Gy.audlb1WQL9STJmqSweRbA5oVztCUWwcms5W.VUJuIDRjJWmBeLjnLwMAp5q5R8T4t81hPEFy1BAa1BopJnTjHasBZcRPJ5h5Vr_Gq1wMTvHlIbWCYE3AL_xr6vcUB99_.R0sm7qsDaJaXmSWSdFLj3d8Z_XaKBm4YM.rQdOUHfVjSnE_eetWIRf_V4hu5I0iRCk8lDS8_vqkHDFvQKgUUkM2vuk3.pAyfvk2IQo1yOnZI15fW8y7vPHxHS5SfUs26zEIAey5OO6zJDWs; _cfuvid=LqpBq5boMOCg4zQ6PJpURyZHempTg6px2BlaFi72jk0-1786917252.15176-1.0.1.1-G0cxkZSRdeJU0n43B_uKUpODhk7.xtTSnB5Tw40O8js; _lr_retry_request=true; __gads=ID=fca3e48b0c50d7bc:T=1786588097:RT=1786917259:S=ALNI_MayaxmOXevVtNh-NrJBWc7-w2ZpiA; __gpi=UID=000014dce0621c68:T=1786588097:RT=1786917259:S=ALNI_MYHPknQgHt9gCoBtFBivZY9SVb2NQ; __eoi=ID=d2af0a67094f635b:T=1786588097:RT=1786917259:S=AA-AfjbWQlU8-NrDTGWYJVmYNxha; _ga_DCD7QPW0Z2=GS2.1.s1786917253$o10$g1$t1786917346$j57$l0$h0; _tfpvi=NTE0MjBjMjItNDUzZC00NDQzLWJkOGQtNDBlYjMxODFmY2NmIzMtNQ%3D%3D; connectId=%7B%22vmuid%22%3A%22D4hnPSO4dPkk_hAuxQLfAmzQ4cpdEsJvI7L04q9RXslkocLZqWyacredNxJS9OLPJKtThEyP7nuEUjMnUnBLTA%22%2C%22connectid%22%3A%22D4hnPSO4dPkk_hAuxQLfAmzQ4cpdEsJvI7L04q9RXslkocLZqWyacredNxJS9OLPJKtThEyP7nuEUjMnUnBLTA%22%2C%22connectId%22%3A%22D4hnPSO4dPkk_hAuxQLfAmzQ4cpdEsJvI7L04q9RXslkocLZqWyacredNxJS9OLPJKtThEyP7nuEUjMnUnBLTA%22%2C%22ttl%22%3A86400000%2C%22he%22%3A%22109f63c7cb82b6cc1716a67c80c87c0bc627c42cf1e208bb2087bcb0a623d3d6%22%2C%22puid%22%3A%222057d0e7-292e-4e39-9309-f7fd922aaf8e%22%2C%22lastSynced%22%3A1786917350737%2C%22lastUsed%22%3A1786917350737%7D; cto_bundle=JbhDyl9RJTJCY0JCUkZNY0VWMDZ3cm1XMzhIUmt0eVZSTEJKNkVZa3cwa2FzVHk2UDJkQnZkJTJGTjdaZ3daSmF2d1VoWmlmU2RFcTN2T1hzTmEzSkhsMmlHQmRONUolMkZaWUNiYiUyQks4bWZBU3hXcXZWcnRjNnM1WXR4MmU2eTlJJTJCeTNRRE9HdVVZNmlxZzEySzhad09vS1V6RkdhQ2FRJTNEJTNE; cto_bidid=0Hp-IF9JYzdyNFVQQ2dJZzdWaDZ4dUZqRkxLS0xVMllGdE9KJTJCc2VTNXpDbWNqN0lsM3lyS1E2RlBTa1EzNkFya00lMkZENyUyRk5jNDJRTiUyRjhzWCUyQlk3TnhzTjA5ckttOXBUTnIyS01GbUVIN1lxRjVPeW8lM0Q' \
+  -H 'dnt: 1' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://www.mut.gg/players/22247-tariq-woolen/27-101022247/' \
+  -H 'sec-ch-ua: "Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
+
+
+curl --url 'https://www.mut.gg/api/mutdb/prices/27-101022247/xbox-series-x/' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: no-cache' \
+  -b 'usprivacy=1YNY; _lc2_fpi=645e522c6bb7--01kzwf5jgtmakfy5vs02r9dr1d; _lc2_fpi_meta=%7B%22w%22%3A1786588088859%7D; _lr_env_src_ats=false; _ga=GA1.1.1726403531.1786588089; panoramaId_expiry=1787192889304; _cc_id=e85d97fee406ccc7beec3510537e1df1; panoramaId=e283c671b5052c45fdced5ae876916d539382457e44145ae0e7fac2697e6f3f6; _scor_uid=e61bc105b84a4f2f870a123f0fb62f58; _ga_DCD7QPW0Z2=deleted; csrftoken=PNFzQ9irInUWN0EyJtFloSyxf6h1g72U; sessionid=m3hyd5221cqvq2ijboi4gfxeh2ljzbqe; _li_dcdm_c=.mut.gg; __binsUID=4ec1e5f7-30b8-49a5-8dfd-2f71d34742b3; cf_clearance=QhLjewp1LlRruVK4VvtOAGzhhSaKILtFmRtTtfquShQ-1786917251-1.2.1.1-K_3Ss5Ab0auqZq2RChbgrdGntM89noNKQTcy5sblzm3kmorKNaXZdd1Fwqv3hYg58z_4PfRtr78WDk.6pd2xMcu5Gy.audlb1WQL9STJmqSweRbA5oVztCUWwcms5W.VUJuIDRjJWmBeLjnLwMAp5q5R8T4t81hPEFy1BAa1BopJnTjHasBZcRPJ5h5Vr_Gq1wMTvHlIbWCYE3AL_xr6vcUB99_.R0sm7qsDaJaXmSWSdFLj3d8Z_XaKBm4YM.rQdOUHfVjSnE_eetWIRf_V4hu5I0iRCk8lDS8_vqkHDFvQKgUUkM2vuk3.pAyfvk2IQo1yOnZI15fW8y7vPHxHS5SfUs26zEIAey5OO6zJDWs; _cfuvid=LqpBq5boMOCg4zQ6PJpURyZHempTg6px2BlaFi72jk0-1786917252.15176-1.0.1.1-G0cxkZSRdeJU0n43B_uKUpODhk7.xtTSnB5Tw40O8js; _lr_retry_request=true; __gads=ID=fca3e48b0c50d7bc:T=1786588097:RT=1786917259:S=ALNI_MayaxmOXevVtNh-NrJBWc7-w2ZpiA; __gpi=UID=000014dce0621c68:T=1786588097:RT=1786917259:S=ALNI_MYHPknQgHt9gCoBtFBivZY9SVb2NQ; __eoi=ID=d2af0a67094f635b:T=1786588097:RT=1786917259:S=AA-AfjbWQlU8-NrDTGWYJVmYNxha; _ga_DCD7QPW0Z2=GS2.1.s1786917253$o10$g1$t1786917346$j57$l0$h0; _tfpvi=NTE0MjBjMjItNDUzZC00NDQzLWJkOGQtNDBlYjMxODFmY2NmIzMtNQ%3D%3D; connectId=%7B%22vmuid%22%3A%22D4hnPSO4dPkk_hAuxQLfAmzQ4cpdEsJvI7L04q9RXslkocLZqWyacredNxJS9OLPJKtThEyP7nuEUjMnUnBLTA%22%2C%22connectid%22%3A%22D4hnPSO4dPkk_hAuxQLfAmzQ4cpdEsJvI7L04q9RXslkocLZqWyacredNxJS9OLPJKtThEyP7nuEUjMnUnBLTA%22%2C%22connectId%22%3A%22D4hnPSO4dPkk_hAuxQLfAmzQ4cpdEsJvI7L04q9RXslkocLZqWyacredNxJS9OLPJKtThEyP7nuEUjMnUnBLTA%22%2C%22ttl%22%3A86400000%2C%22he%22%3A%22109f63c7cb82b6cc1716a67c80c87c0bc627c42cf1e208bb2087bcb0a623d3d6%22%2C%22puid%22%3A%222057d0e7-292e-4e39-9309-f7fd922aaf8e%22%2C%22lastSynced%22%3A1786917350737%2C%22lastUsed%22%3A1786917350737%7D; cto_bundle=JbhDyl9RJTJCY0JCUkZNY0VWMDZ3cm1XMzhIUmt0eVZSTEJKNkVZa3cwa2FzVHk2UDJkQnZkJTJGTjdaZ3daSmF2d1VoWmlmU2RFcTN2T1hzTmEzSkhsMmlHQmRONUolMkZaWUNiYiUyQks4bWZBU3hXcXZWcnRjNnM1WXR4MmU2eTlJJTJCeTNRRE9HdVVZNmlxZzEySzhad09vS1V6RkdhQ2FRJTNEJTNE; cto_bidid=0Hp-IF9JYzdyNFVQQ2dJZzdWaDZ4dUZqRkxLS0xVMllGdE9KJTJCc2VTNXpDbWNqN0lsM3lyS1E2RlBTa1EzNkFya00lMkZENyUyRk5jNDJRTiUyRjhzWCUyQlk3TnhzTjA5ckttOXBUTnIyS01GbUVIN1lxRjVPeW8lM0Q' \
+  -H 'dnt: 1' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://www.mut.gg/players/22247-tariq-woolen/27-101022247/' \
+  -H 'sec-ch-ua: "Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
+
+
+
+
+
+curl --url 'https://www.mut.gg/api/mutdb/prices/27-101022247/xbox-series-x/' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: no-cache' \
+  -b 'usprivacy=1YNY; _lc2_fpi=645e522c6bb7--01kzwf5jgtmakfy5vs02r9dr1d; _lc2_fpi_meta=%7B%22w%22%3A1786588088859%7D; _lr_env_src_ats=false; _ga=GA1.1.1726403531.1786588089; panoramaId_expiry=1787192889304; _cc_id=e85d97fee406ccc7beec3510537e1df1; panoramaId=e283c671b5052c45fdced5ae876916d539382457e44145ae0e7fac2697e6f3f6; _scor_uid=e61bc105b84a4f2f870a123f0fb62f58; _ga_DCD7QPW0Z2=deleted; csrftoken=PNFzQ9irInUWN0EyJtFloSyxf6h1g72U; sessionid=m3hyd5221cqvq2ijboi4gfxeh2ljzbqe; _li_dcdm_c=.mut.gg; __binsUID=4ec1e5f7-30b8-49a5-8dfd-2f71d34742b3; cf_clearance=QhLjewp1LlRruVK4VvtOAGzhhSaKILtFmRtTtfquShQ-1786917251-1.2.1.1-K_3Ss5Ab0auqZq2RChbgrdGntM89noNKQTcy5sblzm3kmorKNaXZdd1Fwqv3hYg58z_4PfRtr78WDk.6pd2xMcu5Gy.audlb1WQL9STJmqSweRbA5oVztCUWwcms5W.VUJuIDRjJWmBeLjnLwMAp5q5R8T4t81hPEFy1BAa1BopJnTjHasBZcRPJ5h5Vr_Gq1wMTvHlIbWCYE3AL_xr6vcUB99_.R0sm7qsDaJaXmSWSdFLj3d8Z_XaKBm4YM.rQdOUHfVjSnE_eetWIRf_V4hu5I0iRCk8lDS8_vqkHDFvQKgUUkM2vuk3.pAyfvk2IQo1yOnZI15fW8y7vPHxHS5SfUs26zEIAey5OO6zJDWs; _cfuvid=LqpBq5boMOCg4zQ6PJpURyZHempTg6px2BlaFi72jk0-1786917252.15176-1.0.1.1-G0cxkZSRdeJU0n43B_uKUpODhk7.xtTSnB5Tw40O8js; _lr_retry_request=true; __gads=ID=fca3e48b0c50d7bc:T=1786588097:RT=1786917259:S=ALNI_MayaxmOXevVtNh-NrJBWc7-w2ZpiA; __gpi=UID=000014dce0621c68:T=1786588097:RT=1786917259:S=ALNI_MYHPknQgHt9gCoBtFBivZY9SVb2NQ; __eoi=ID=d2af0a67094f635b:T=1786588097:RT=1786917259:S=AA-AfjbWQlU8-NrDTGWYJVmYNxha; _ga_DCD7QPW0Z2=GS2.1.s1786917253$o10$g1$t1786917346$j57$l0$h0; _tfpvi=NTE0MjBjMjItNDUzZC00NDQzLWJkOGQtNDBlYjMxODFmY2NmIzMtNQ%3D%3D; connectId=%7B%22vmuid%22%3A%22D4hnPSO4dPkk_hAuxQLfAmzQ4cpdEsJvI7L04q9RXslkocLZqWyacredNxJS9OLPJKtThEyP7nuEUjMnUnBLTA%22%2C%22connectid%22%3A%22D4hnPSO4dPkk_hAuxQLfAmzQ4cpdEsJvI7L04q9RXslkocLZqWyacredNxJS9OLPJKtThEyP7nuEUjMnUnBLTA%22%2C%22connectId%22%3A%22D4hnPSO4dPkk_hAuxQLfAmzQ4cpdEsJvI7L04q9RXslkocLZqWyacredNxJS9OLPJKtThEyP7nuEUjMnUnBLTA%22%2C%22ttl%22%3A86400000%2C%22he%22%3A%22109f63c7cb82b6cc1716a67c80c87c0bc627c42cf1e208bb2087bcb0a623d3d6%22%2C%22puid%22%3A%222057d0e7-292e-4e39-9309-f7fd922aaf8e%22%2C%22lastSynced%22%3A1786917350737%2C%22lastUsed%22%3A1786917350737%7D; cto_bundle=JbhDyl9RJTJCY0JCUkZNY0VWMDZ3cm1XMzhIUmt0eVZSTEJKNkVZa3cwa2FzVHk2UDJkQnZkJTJGTjdaZ3daSmF2d1VoWmlmU2RFcTN2T1hzTmEzSkhsMmlHQmRONUolMkZaWUNiYiUyQks4bWZBU3hXcXZWcnRjNnM1WXR4MmU2eTlJJTJCeTNRRE9HdVVZNmlxZzEySzhad09vS1V6RkdhQ2FRJTNEJTNE; cto_bidid=0Hp-IF9JYzdyNFVQQ2dJZzdWaDZ4dUZqRkxLS0xVMllGdE9KJTJCc2VTNXpDbWNqN0lsM3lyS1E2RlBTa1EzNkFya00lMkZENyUyRk5jNDJRTiUyRjhzWCUyQlk3TnhzTjA5ckttOXBUTnIyS01GbUVIN1lxRjVPeW8lM0Q' \
+  -H 'dnt: 1' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://www.mut.gg/players/22247-tariq-woolen/27-101022247/' \
+  -H 'sec-ch-ua: "Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
+
+
+
+
+
+
+
+
+
+
+
+I want to build an Auction House player price sniper for Madden 27 Ultimate Team.
+
+I already have all of the Madden 26 Companion App endpoints, a lot of the frontend files, and other data from the previous version. I need help figuring out how to adapt what I already have for Madden 27.
+
+The main things I want to accomplish are:
+
+Figure out the Madden 27 API address/version and how it differs from Madden 26.
+Use the existing endpoints and frontend files to identify the new Auction House API and request structure.
+Implement the automated sniping logic for finding underpriced players.
+Develop bidding algorithms that determine when a card is worth bidding on and the maximum profitable bid.
+Optimize the request headers and API requests for speed.
+Track Auction House player prices and determine whether buying and reselling a card would be profitable.
+
+I also want to use MUT.GG as an additional source for player pricing and market data.
+
+MUT.GG:
+http://mut.gg
+
+Example player page:
+https://www.mut.gg/players/22247-tariq-woolen/27-101022247/
+
+The goal is to pull the relevant player pricing data from MUT.GG and compare it against the live Auction House data to calculate potential margins.
+
+For example, if a player is listed significantly below the expected market value, I want the system to calculate:
+
+Purchase price
+Expected resale price
+Auction House tax/fees
+Expected profit
+ROI/margin
+Whether the flip is actually worth taking
+
+Then I want the app to alert me whenever a high-margin flip opportunity becomes available.
+
+I already have a lot of the pieces, including the Madden 26 API endpoints and frontend files, so audit what I provide first and work from the existing implementation. Don't assume Madden 27 uses the exact same API as Madden 26, and don't rewrite or replace existing code without first determining what can be reused.
+
+The immediate goal is to figure out the Madden 27 Auction House API, pricing data flow, request structure, and market data sources, then build the automated sniping, bidding, and profitability logic around that.
+
+
+
+
+
+
+i want to build a auction house player price sniper, for mut 27   and i have alot of the enternal frontend files alreaady  implementing the automated sniping logic and bidding algorithms. and i need to figure out the 2027 address for the new API version and optimize the request headers for speed. what i also wanna do is have something tell me if it would be profitable to buy and sell cards on madden 27 ultimate team
+now there is a site http://mut.gg has all the players prices everythign so I want an app that scrapes their data to calculate potential margins.https://www.mut.gg/players/22247-tariq-woolen/27-101022247/ and alerts me whenever a high-margin flip opportunity becomes available.here is what i have so far
+
+
+
+
+
+
+i want to build a dashboard that tells me the best cards to buy and flip from the auction house in madden ultimate team 27  i have scraped a few sites that does this alraaady and supplied some files. but the best 
+
+
+
+
+I want to build an Auction House player price sniper for Madden 27 Ultimate Team.
+
+I already have all of the Madden 26 Companion App endpoints, a lot of the frontend files, and other data from the previous version. I need help figuring out how to adapt what I already have for Madden 27.
+
+The main things I want to accomplish are:
+
+Figure out the Madden 27 API address/version 
+Use the existing endpoints and frontend files to identify the new Auction House API and request structure.
+Implement the automated sniping logic for finding underpriced players.
+Develop bidding algorithms that determine when a card is worth bidding on and the maximum profitable bid.
+Optimize the request headers and API requests for speed.
+Track Auction House player prices and determine whether buying and reselling a card would be profitable.
+
+I also want to use MUT.GG as an additional source for player pricing and market data.
+
+MUT.GG:
+http://mut.gg
+
+Example player page:
+https://www.mut.gg/players/22247-tariq-woolen/27-101022247/
+
+The goal is to pull the relevant player pricing data the auction house madden 27 endpoints and from MUT.GG and find the best live Auction House data to calculate potential margins.
+
+For example, if a player is listed significantly below the expected market value, I want the system to calculate:
+
+Purchase price
+Expected resale price
+Auction House tax/fees
+Expected profit
+ROI/margin
+Whether the flip is actually worth taking
+
+Then I want the app to alert me whenever a high-margin flip opportunity becomes available.
+
+example 
+er
+
+SORT TABLE
+OVR
+Buy Now
+Q3(15)
+Profit
+Exp
+Action
+6
+
+QB
+Fernando Mendoza
+Rookies
+•
+78 OVR
+•
+38s ago
+78
+4.8K
+14K
++7.4K
+23h
+BUY
+QB
+Jaxson Dart
+Pregame Access
+•
+85 OVR
+•
+1m ago
+85
+248K
+282K
++5.8K
+23h
+BUY
+QB
+Drake Maye
+Core
+•
+83 OVR
+•
+32m ago
+83
+99K
+118K
++7.1K
+23h
+BUY
+
+
+i have provided the stuff to link your ea account and i want to be able to link your binder but that can be after the auction player sniper , i want no mock data at all no fake data look at the mutdashboard files for how i want it 

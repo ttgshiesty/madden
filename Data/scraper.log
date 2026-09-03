@@ -1,0 +1,45 @@
+2026-08-19 22:55:29,834 - INFO - Loaded configuration from /Users/finessekid/Desktop/^^MUT^^/main-project/scrapper/scraper_config.json
+2026-08-19 23:15:13,385 - INFO - Loaded configuration from /Users/finessekid/Desktop/^^MUT^^/main-project/scrapper/scraper_config.json
+2026-08-19 23:15:13,394 - INFO - ============================================================
+2026-08-19 23:15:13,394 - INFO - Enhanced MUT.GG Player Scraper
+2026-08-19 23:15:13,394 - INFO - ============================================================
+2026-08-19 23:15:13,395 - INFO - Configuration:
+2026-08-19 23:15:13,395 - INFO -   Pages to scrape: 2
+2026-08-19 23:15:13,395 - INFO -   Parallel workers: 1
+2026-08-19 23:15:13,395 - INFO -   Output format: json
+2026-08-19 23:15:13,395 - INFO -   Output directory: ../Data
+2026-08-19 23:15:13,395 - INFO -   External IDs only: False
+2026-08-19 23:15:13,395 - INFO -   Resume mode: False
+2026-08-19 23:15:13,395 - INFO -   Request timeout: 30s
+2026-08-19 23:15:13,395 - INFO -   Retry attempts: 3
+2026-08-19 23:15:13,396 - INFO - ============================================================
+2026-08-19 23:15:13,396 - INFO - Starting parallel scrape with 1 workers from page 1 to 2
+2026-08-19 23:15:13,396 - INFO - Processing batch: pages 1-1
+2026-08-19 23:15:13,403 - INFO - Fetching page 1...
+2026-08-19 23:15:14,314 - INFO - Page 1: found 15 player-list-item elements
+2026-08-19 23:15:14,675 - INFO - Completed page 1/2 (1/2 processed)
+2026-08-19 23:15:14,677 - INFO - Batch complete: added 15 new players (total unique: 15)
+2026-08-19 23:15:14,678 - DEBUG - Saved progress: page 1, 15 players
+2026-08-19 23:15:14,679 - INFO - Processing batch: pages 2-2
+2026-08-19 23:15:14,680 - INFO - Fetching page 2...
+2026-08-19 23:15:15,867 - INFO - Page 2: found 15 player-list-item elements
+2026-08-19 23:15:16,349 - INFO - Completed page 2/2 (2/2 processed)
+2026-08-19 23:15:16,352 - INFO - Batch complete: added 15 new players (total unique: 30)
+2026-08-19 23:15:16,353 - DEBUG - Saved progress: page 2, 30 players
+2026-08-19 23:15:16,355 - INFO - Parallel scrape completed in 2.96s (0.05 minutes)
+2026-08-19 23:15:16,355 - INFO - Processed 2 pages with 0 errors
+2026-08-19 23:15:16,356 - INFO - Total unique players: 30
+2026-08-19 23:15:16,359 - INFO - Cleared progress file
+2026-08-19 23:15:16,359 - INFO - Exporting data...
+2026-08-19 23:15:16,361 - INFO - Saved 30 players to ../Data/mut27_players.json
+2026-08-19 23:15:16,361 - INFO - ============================================================
+2026-08-19 23:15:16,362 - INFO - SCRAPER SUMMARY
+2026-08-19 23:15:16,362 - INFO - ============================================================
+2026-08-19 23:15:16,362 - INFO - Total players scraped: 30
+2026-08-19 23:15:16,362 - INFO - Total time elapsed: 2.97s (0.05 minutes)
+2026-08-19 23:15:16,363 - INFO - Average rate: 10.12 players/second
+2026-08-19 23:15:16,363 - INFO - Players with prices: 0
+2026-08-19 23:15:16,363 - INFO - Exported files: 1
+2026-08-19 23:15:16,363 - INFO -   - ../Data/mut27_players.json
+2026-08-19 23:15:16,363 - INFO - ============================================================
+2026-08-19 23:15:16,363 - INFO - Scraping completed successfully!

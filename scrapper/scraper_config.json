@@ -1,0 +1,17 @@
+{
+  "default_pages": 100,
+  "default_parallel": 3,
+  "default_format": "json",
+  "default_output_dir": "../Data",
+  "request_timeout": 30,
+  "retry_attempts": 3,
+  "retry_delay": 1,
+  "rate_limit_delay": 0.3,
+  "external_ids_only": false,
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "core_data": {
+    "enabled": false,
+    "incremental": false,
+    "api_url": "https://www.mut.gg/api/27/core-data/"
+  }
+}

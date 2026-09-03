@@ -1,0 +1,947 @@
+2026-08-22 01:45:14,416 - INFO - ============================================================
+2026-08-22 01:45:14,417 - INFO - Core-Data Scraper
+2026-08-22 01:45:14,418 - INFO - ============================================================
+2026-08-22 01:45:14,418 - INFO - Fetching core data from https://www.mut.gg/api/27/core-data/
+2026-08-22 01:45:14,805 - INFO - Successfully fetched core data
+2026-08-22 01:45:14,816 - INFO - Parsed 1033 abilities
+2026-08-22 01:45:14,816 - INFO - Parsed 32 teams
+2026-08-22 01:45:14,816 - INFO - Parsed 26 programs
+2026-08-22 01:45:14,864 - INFO - Saved core data to /Users/finessekid/Desktop/^^MUT^^/main-project/Data/core_data.json
+2026-08-22 01:45:14,925 - INFO - Saved 1033 abilities to /Users/finessekid/Desktop/^^MUT^^/main-project/Data/abilities.json
+2026-08-22 01:45:14,929 - INFO - Saved 32 teams to /Users/finessekid/Desktop/^^MUT^^/main-project/Data/teams.json
+2026-08-22 01:45:14,936 - INFO - Saved 26 programs to /Users/finessekid/Desktop/^^MUT^^/main-project/Data/programs.json
+2026-08-22 01:45:14,936 - INFO - ============================================================
+2026-08-22 01:45:14,940 - INFO - CORE-DATA SCRAPER SUMMARY
+2026-08-22 01:45:14,940 - INFO - ============================================================
+2026-08-22 01:45:14,941 - INFO - Abilities: 1033
+2026-08-22 01:45:14,942 - INFO - Teams: 32
+2026-08-22 01:45:14,942 - INFO - Programs: 26
+2026-08-22 01:45:14,951 - INFO - Time elapsed: 0.52s
+2026-08-22 01:45:14,952 - INFO - ============================================================
+2026-08-22 01:50:06,465 - INFO - Loaded configuration from /Users/finessekid/Desktop/^^MUT^^/main-project/scrapper/scraper_config.json
+2026-08-22 01:50:06,470 - INFO - ============================================================
+2026-08-22 01:50:06,470 - INFO - Core-Data Scraper Mode
+2026-08-22 01:50:06,470 - INFO - ============================================================
+2026-08-22 01:50:06,470 - INFO - Output directory: ../Data
+2026-08-22 01:50:06,471 - INFO - Incremental mode: False
+2026-08-22 01:50:06,471 - INFO - ============================================================
+2026-08-22 01:50:06,471 - INFO - ============================================================
+2026-08-22 01:50:06,471 - INFO - Core-Data Scraper
+2026-08-22 01:50:06,471 - INFO - ============================================================
+2026-08-22 01:50:06,471 - INFO - Fetching core data from https://www.mut.gg/api/27/core-data/
+2026-08-22 01:50:06,981 - INFO - Successfully fetched core data
+2026-08-22 01:50:06,991 - INFO - Parsed 1033 abilities
+2026-08-22 01:50:06,993 - INFO - Parsed 32 teams
+2026-08-22 01:50:06,994 - INFO - Parsed 26 programs
+2026-08-22 01:50:07,109 - INFO - Saved core data to ../Data/core_data.json
+2026-08-22 01:50:07,342 - INFO - Saved 1033 abilities to ../Data/abilities.json
+2026-08-22 01:50:07,348 - INFO - Saved 32 teams to ../Data/teams.json
+2026-08-22 01:50:07,351 - INFO - Saved 26 programs to ../Data/programs.json
+2026-08-22 01:50:07,351 - INFO - ============================================================
+2026-08-22 01:50:07,351 - INFO - CORE-DATA SCRAPER SUMMARY
+2026-08-22 01:50:07,352 - INFO - ============================================================
+2026-08-22 01:50:07,352 - INFO - Abilities: 1033
+2026-08-22 01:50:07,352 - INFO - Teams: 32
+2026-08-22 01:50:07,352 - INFO - Programs: 26
+2026-08-22 01:50:07,352 - INFO - Time elapsed: 0.88s
+2026-08-22 01:50:07,353 - INFO - ============================================================
+2026-08-22 01:50:07,355 - INFO - Core-data scraping completed successfully!
+2026-08-22 02:09:57,834 - INFO - Loaded configuration from /Users/finessekid/Desktop/^^MUT^^/main-project/scrapper/scraper_config.json
+2026-08-22 02:09:57,841 - INFO - ============================================================
+2026-08-22 02:09:57,841 - INFO - Enhanced MUT.GG Player Scraper
+2026-08-22 02:09:57,842 - INFO - ============================================================
+2026-08-22 02:09:57,842 - INFO - Configuration:
+2026-08-22 02:09:57,842 - INFO -   Pages to scrape: 2
+2026-08-22 02:09:57,842 - INFO -   Parallel workers: 3
+2026-08-22 02:09:57,842 - INFO -   Output format: json
+2026-08-22 02:09:57,842 - INFO -   Output directory: ../Data
+2026-08-22 02:09:57,843 - INFO -   External IDs only: False
+2026-08-22 02:09:57,844 - INFO -   Resume mode: False
+2026-08-22 02:09:57,844 - INFO -   Request timeout: 30s
+2026-08-22 02:09:57,844 - INFO -   Retry attempts: 3
+2026-08-22 02:09:57,844 - INFO -   Core-data scraping: True
+2026-08-22 02:09:57,844 - INFO - ============================================================
+2026-08-22 02:09:57,844 - INFO - Starting parallel scrape with 3 workers from page 1 to 2
+2026-08-22 02:09:57,845 - INFO - Processing batch: pages 1-2
+2026-08-22 02:09:57,847 - INFO - Fetching page 1...
+2026-08-22 02:09:57,851 - INFO - Fetching page 2...
+2026-08-22 02:09:58,495 - INFO - Page 2: found 15 player-list-item elements
+2026-08-22 02:09:58,651 - INFO - Page 1: found 15 player-list-item elements
+2026-08-22 02:09:58,885 - INFO - Completed page 2/2 (1/2 processed)
+2026-08-22 02:09:58,969 - INFO - Completed page 1/2 (2/2 processed)
+2026-08-22 02:09:58,972 - INFO - Batch complete: added 30 new players (total unique: 30)
+2026-08-22 02:09:58,974 - INFO - Parallel scrape completed in 1.13s (0.02 minutes)
+2026-08-22 02:09:58,974 - INFO - Processed 2 pages with 0 errors
+2026-08-22 02:09:58,975 - INFO - Total unique players: 30
+2026-08-22 02:09:58,977 - INFO - Cleared progress file
+2026-08-22 02:09:58,977 - INFO - Exporting data...
+2026-08-22 02:09:58,996 - INFO - Saved 30 players to ../Data/mut27_players.json
+2026-08-22 02:09:58,996 - INFO - Scraping core-data...
+2026-08-22 02:09:58,997 - INFO - ============================================================
+2026-08-22 02:09:58,997 - INFO - Core-Data Scraper
+2026-08-22 02:09:58,997 - INFO - ============================================================
+2026-08-22 02:09:58,997 - INFO - Fetching core data from https://www.mut.gg/api/27/core-data/
+2026-08-22 02:09:59,188 - INFO - Successfully fetched core data
+2026-08-22 02:09:59,207 - INFO - Parsed 1033 abilities
+2026-08-22 02:09:59,208 - INFO - Parsed 32 teams
+2026-08-22 02:09:59,209 - INFO - Parsed 26 programs
+2026-08-22 02:09:59,297 - INFO - Saved core data to ../Data/core_data.json
+2026-08-22 02:09:59,429 - INFO - Saved 1033 abilities to ../Data/abilities.json
+2026-08-22 02:09:59,435 - INFO - Saved 32 teams to ../Data/teams.json
+2026-08-22 02:09:59,441 - INFO - Saved 26 programs to ../Data/programs.json
+2026-08-22 02:09:59,441 - INFO - ============================================================
+2026-08-22 02:09:59,442 - INFO - CORE-DATA SCRAPER SUMMARY
+2026-08-22 02:09:59,446 - INFO - ============================================================
+2026-08-22 02:09:59,447 - INFO - Abilities: 1033
+2026-08-22 02:09:59,450 - INFO - Teams: 32
+2026-08-22 02:09:59,450 - INFO - Programs: 26
+2026-08-22 02:09:59,453 - INFO - Time elapsed: 0.44s
+2026-08-22 02:09:59,453 - INFO - ============================================================
+2026-08-22 02:09:59,459 - INFO - Core-data scraped: 1033 abilities, 32 teams, 26 programs
+2026-08-22 02:09:59,460 - INFO - ============================================================
+2026-08-22 02:09:59,460 - INFO - SCRAPER SUMMARY
+2026-08-22 02:09:59,460 - INFO - ============================================================
+2026-08-22 02:09:59,461 - INFO - Total players scraped: 30
+2026-08-22 02:09:59,461 - INFO - Total time elapsed: 1.62s (0.03 minutes)
+2026-08-22 02:09:59,461 - INFO - Average rate: 18.57 players/second
+2026-08-22 02:09:59,461 - INFO - Players with prices: 0
+2026-08-22 02:09:59,462 - INFO - Exported files: 1
+2026-08-22 02:09:59,462 - INFO -   - ../Data/mut27_players.json
+2026-08-22 02:09:59,462 - INFO - ============================================================
+2026-08-22 02:09:59,463 - INFO - Scraping completed successfully!
+2026-08-22 02:10:48,252 - INFO - Loaded configuration from /Users/finessekid/Desktop/^^MUT^^/main-project/scrapper/scraper_config.json
+2026-08-22 02:10:48,260 - INFO - ============================================================
+2026-08-22 02:10:48,261 - INFO - Core-Data Scraper Mode
+2026-08-22 02:10:48,261 - INFO - ============================================================
+2026-08-22 02:10:48,261 - INFO - Output directory: ../Data
+2026-08-22 02:10:48,261 - INFO - Incremental mode: True
+2026-08-22 02:10:48,262 - INFO - ============================================================
+2026-08-22 02:10:48,262 - INFO - ============================================================
+2026-08-22 02:10:48,262 - INFO - Core-Data Scraper
+2026-08-22 02:10:48,262 - INFO - ============================================================
+2026-08-22 02:10:48,262 - INFO - Fetching core data from https://www.mut.gg/api/27/core-data/
+2026-08-22 02:10:48,617 - INFO - Successfully fetched core data
+2026-08-22 02:10:48,638 - INFO - Parsed 1033 abilities
+2026-08-22 02:10:48,638 - INFO - Parsed 32 teams
+2026-08-22 02:10:48,640 - INFO - Parsed 26 programs
+2026-08-22 02:10:48,743 - INFO - Saved core data to ../Data/core_data.json
+2026-08-22 02:10:48,791 - INFO - Saved 1033 abilities to ../Data/abilities.json
+2026-08-22 02:10:48,794 - INFO - Saved 32 teams to ../Data/teams.json
+2026-08-22 02:10:48,797 - INFO - Saved 26 programs to ../Data/programs.json
+2026-08-22 02:10:48,866 - INFO - ============================================================
+2026-08-22 02:10:48,866 - INFO - CORE-DATA SCRAPER SUMMARY
+2026-08-22 02:10:48,867 - INFO - ============================================================
+2026-08-22 02:10:48,867 - INFO - Abilities: 1033
+2026-08-22 02:10:48,867 - INFO - Teams: 32
+2026-08-22 02:10:48,867 - INFO - Programs: 26
+2026-08-22 02:10:48,867 - INFO - Time elapsed: 0.60s
+2026-08-22 02:10:48,867 - INFO - ============================================================
+2026-08-22 02:10:48,869 - INFO - Core-data scraping completed successfully!
+2026-08-22 02:14:47,197 - INFO - Loaded configuration from /Users/finessekid/Desktop/^^MUT^^/main-project/scrapper/scraper_config.json
+2026-08-22 02:14:47,199 - INFO - ============================================================
+2026-08-22 02:14:47,199 - INFO - Enhanced MUT.GG Player Scraper
+2026-08-22 02:14:47,199 - INFO - ============================================================
+2026-08-22 02:14:47,199 - INFO - Configuration:
+2026-08-22 02:14:47,199 - INFO -   Pages to scrape: 100
+2026-08-22 02:14:47,200 - INFO -   Parallel workers: 3
+2026-08-22 02:14:47,200 - INFO -   Output format: json
+2026-08-22 02:14:47,200 - INFO -   Output directory: ../Data
+2026-08-22 02:14:47,200 - INFO -   External IDs only: False
+2026-08-22 02:14:47,200 - INFO -   Resume mode: False
+2026-08-22 02:14:47,200 - INFO -   Request timeout: 30s
+2026-08-22 02:14:47,201 - INFO -   Retry attempts: 3
+2026-08-22 02:14:47,201 - INFO -   Core-data scraping: False
+2026-08-22 02:14:47,201 - INFO - ============================================================
+2026-08-22 02:14:47,201 - INFO - Starting parallel scrape with 3 workers from page 1 to 100
+2026-08-22 02:14:47,201 - INFO - Processing batch: pages 1-3
+2026-08-22 02:14:47,202 - INFO - Fetching page 1...
+2026-08-22 02:14:47,204 - INFO - Fetching page 2...
+2026-08-22 02:14:47,205 - INFO - Fetching page 3...
+2026-08-22 02:14:48,063 - INFO - Page 1: found 15 player-list-item elements
+2026-08-22 02:14:48,079 - INFO - Page 2: found 15 player-list-item elements
+2026-08-22 02:14:48,080 - INFO - Page 3: found 15 player-list-item elements
+2026-08-22 02:14:48,434 - INFO - Completed page 1/100 (1/100 processed)
+2026-08-22 02:14:48,464 - INFO - Completed page 2/100 (2/100 processed)
+2026-08-22 02:14:48,468 - INFO - Completed page 3/100 (3/100 processed)
+2026-08-22 02:14:48,469 - INFO - Batch complete: added 45 new players (total unique: 45)
+2026-08-22 02:14:48,472 - INFO - Processing batch: pages 4-6
+2026-08-22 02:14:48,473 - INFO - Fetching page 4...
+2026-08-22 02:14:48,473 - INFO - Fetching page 5...
+2026-08-22 02:14:48,475 - INFO - Fetching page 6...
+2026-08-22 02:14:48,873 - INFO - Page 4: found 15 player-list-item elements
+2026-08-22 02:14:49,107 - INFO - Page 5: found 15 player-list-item elements
+2026-08-22 02:14:49,174 - INFO - Page 6: found 15 player-list-item elements
+2026-08-22 02:14:49,257 - INFO - Completed page 4/100 (4/100 processed)
+2026-08-22 02:14:49,477 - INFO - Completed page 5/100 (5/100 processed)
+2026-08-22 02:14:49,505 - INFO - Completed page 6/100 (6/100 processed)
+2026-08-22 02:14:49,506 - INFO - Batch complete: added 45 new players (total unique: 90)
+2026-08-22 02:14:49,507 - INFO - Processing batch: pages 7-9
+2026-08-22 02:14:49,508 - INFO - Fetching page 7...
+2026-08-22 02:14:49,509 - INFO - Fetching page 8...
+2026-08-22 02:14:49,510 - INFO - Fetching page 9...
+2026-08-22 02:14:50,253 - INFO - Page 9: found 15 player-list-item elements
+2026-08-22 02:14:50,282 - INFO - Page 7: found 15 player-list-item elements
+2026-08-22 02:14:50,504 - INFO - Page 8: found 15 player-list-item elements
+2026-08-22 02:14:50,769 - INFO - Completed page 9/100 (7/100 processed)
+2026-08-22 02:14:50,772 - INFO - Completed page 7/100 (8/100 processed)
+2026-08-22 02:14:50,830 - INFO - Completed page 8/100 (9/100 processed)
+2026-08-22 02:14:50,833 - INFO - Batch complete: added 44 new players (total unique: 134)
+2026-08-22 02:14:50,834 - INFO - Processing batch: pages 10-12
+2026-08-22 02:14:50,834 - INFO - Fetching page 10...
+2026-08-22 02:14:50,835 - INFO - Fetching page 12...
+2026-08-22 02:14:50,835 - INFO - Fetching page 11...
+2026-08-22 02:14:51,511 - INFO - Page 10: found 15 player-list-item elements
+2026-08-22 02:14:51,521 - INFO - Page 11: found 15 player-list-item elements
+2026-08-22 02:14:51,550 - INFO - Page 12: found 15 player-list-item elements
+2026-08-22 02:14:51,860 - INFO - Completed page 10/100 (10/100 processed)
+2026-08-22 02:14:51,872 - INFO - Completed page 11/100 (11/100 processed)
+2026-08-22 02:14:51,877 - INFO - Completed page 12/100 (12/100 processed)
+2026-08-22 02:14:51,878 - INFO - Batch complete: added 45 new players (total unique: 179)
+2026-08-22 02:14:51,879 - INFO - Processing batch: pages 13-15
+2026-08-22 02:14:51,879 - INFO - Fetching page 13...
+2026-08-22 02:14:51,884 - INFO - Fetching page 14...
+2026-08-22 02:14:51,886 - INFO - Fetching page 15...
+2026-08-22 02:14:52,613 - INFO - Page 15: found 15 player-list-item elements
+2026-08-22 02:14:52,707 - INFO - Page 14: found 15 player-list-item elements
+2026-08-22 02:14:52,708 - INFO - Page 13: found 15 player-list-item elements
+2026-08-22 02:14:53,045 - INFO - Completed page 15/100 (13/100 processed)
+2026-08-22 02:14:53,053 - INFO - Completed page 13/100 (14/100 processed)
+2026-08-22 02:14:53,060 - INFO - Completed page 14/100 (15/100 processed)
+2026-08-22 02:14:53,061 - INFO - Batch complete: added 45 new players (total unique: 224)
+2026-08-22 02:14:53,062 - INFO - Processing batch: pages 16-18
+2026-08-22 02:14:53,064 - INFO - Fetching page 16...
+2026-08-22 02:14:53,067 - INFO - Fetching page 17...
+2026-08-22 02:14:53,070 - INFO - Fetching page 18...
+2026-08-22 02:14:53,643 - INFO - Page 16: found 15 player-list-item elements
+2026-08-22 02:14:53,714 - INFO - Page 18: found 15 player-list-item elements
+2026-08-22 02:14:53,935 - INFO - Page 17: found 15 player-list-item elements
+2026-08-22 02:14:54,034 - INFO - Completed page 16/100 (16/100 processed)
+2026-08-22 02:14:54,064 - INFO - Completed page 18/100 (17/100 processed)
+2026-08-22 02:14:54,273 - INFO - Completed page 17/100 (18/100 processed)
+2026-08-22 02:14:54,278 - INFO - Batch complete: added 45 new players (total unique: 269)
+2026-08-22 02:14:54,279 - INFO - Processing batch: pages 19-21
+2026-08-22 02:14:54,279 - INFO - Fetching page 19...
+2026-08-22 02:14:54,279 - INFO - Fetching page 20...
+2026-08-22 02:14:54,283 - INFO - Fetching page 21...
+2026-08-22 02:14:54,768 - INFO - Page 21: found 15 player-list-item elements
+2026-08-22 02:14:54,880 - INFO - Page 20: found 15 player-list-item elements
+2026-08-22 02:14:55,186 - INFO - Page 19: found 15 player-list-item elements
+2026-08-22 02:14:55,194 - INFO - Completed page 21/100 (19/100 processed)
+2026-08-22 02:14:55,259 - INFO - Completed page 20/100 (20/100 processed)
+2026-08-22 02:14:55,522 - INFO - Completed page 19/100 (21/100 processed)
+2026-08-22 02:14:55,529 - INFO - Batch complete: added 45 new players (total unique: 314)
+2026-08-22 02:14:55,530 - INFO - Processing batch: pages 22-24
+2026-08-22 02:14:55,531 - INFO - Fetching page 22...
+2026-08-22 02:14:55,544 - INFO - Fetching page 23...
+2026-08-22 02:14:55,562 - INFO - Fetching page 24...
+2026-08-22 02:14:56,372 - INFO - Page 22: found 15 player-list-item elements
+2026-08-22 02:14:56,400 - INFO - Page 24: found 15 player-list-item elements
+2026-08-22 02:14:56,468 - INFO - Page 23: found 15 player-list-item elements
+2026-08-22 02:14:56,765 - INFO - Completed page 24/100 (22/100 processed)
+2026-08-22 02:14:56,769 - INFO - Completed page 22/100 (23/100 processed)
+2026-08-22 02:14:56,790 - INFO - Completed page 23/100 (24/100 processed)
+2026-08-22 02:14:56,795 - INFO - Batch complete: added 45 new players (total unique: 359)
+2026-08-22 02:14:56,796 - INFO - Processing batch: pages 25-27
+2026-08-22 02:14:56,797 - INFO - Fetching page 25...
+2026-08-22 02:14:56,799 - INFO - Fetching page 26...
+2026-08-22 02:14:56,801 - INFO - Fetching page 27...
+2026-08-22 02:14:57,376 - INFO - Page 25: found 15 player-list-item elements
+2026-08-22 02:14:57,457 - INFO - Page 26: found 15 player-list-item elements
+2026-08-22 02:14:57,533 - INFO - Page 27: found 15 player-list-item elements
+2026-08-22 02:14:57,772 - INFO - Completed page 25/100 (25/100 processed)
+2026-08-22 02:14:57,829 - INFO - Completed page 26/100 (26/100 processed)
+2026-08-22 02:14:57,898 - INFO - Completed page 27/100 (27/100 processed)
+2026-08-22 02:14:57,899 - INFO - Batch complete: added 45 new players (total unique: 404)
+2026-08-22 02:14:57,901 - INFO - Processing batch: pages 28-30
+2026-08-22 02:14:57,901 - INFO - Fetching page 28...
+2026-08-22 02:14:57,902 - INFO - Fetching page 29...
+2026-08-22 02:14:57,902 - INFO - Fetching page 30...
+2026-08-22 02:14:58,323 - INFO - Page 28: found 15 player-list-item elements
+2026-08-22 02:14:58,719 - INFO - Completed page 28/100 (28/100 processed)
+2026-08-22 02:14:58,773 - INFO - Page 30: found 15 player-list-item elements
+2026-08-22 02:14:58,807 - INFO - Page 29: found 15 player-list-item elements
+2026-08-22 02:14:59,131 - INFO - Completed page 30/100 (29/100 processed)
+2026-08-22 02:14:59,140 - INFO - Completed page 29/100 (30/100 processed)
+2026-08-22 02:14:59,142 - INFO - Batch complete: added 45 new players (total unique: 449)
+2026-08-22 02:14:59,146 - INFO - Processing batch: pages 31-33
+2026-08-22 02:14:59,154 - INFO - Fetching page 31...
+2026-08-22 02:14:59,191 - INFO - Fetching page 32...
+2026-08-22 02:14:59,197 - INFO - Fetching page 33...
+2026-08-22 02:14:59,649 - INFO - Page 31: found 15 player-list-item elements
+2026-08-22 02:14:59,964 - INFO - Page 32: found 15 player-list-item elements
+2026-08-22 02:15:00,065 - INFO - Page 33: found 15 player-list-item elements
+2026-08-22 02:15:00,132 - INFO - Completed page 31/100 (31/100 processed)
+2026-08-22 02:15:00,363 - INFO - Completed page 32/100 (32/100 processed)
+2026-08-22 02:15:00,388 - INFO - Completed page 33/100 (33/100 processed)
+2026-08-22 02:15:00,390 - INFO - Batch complete: added 45 new players (total unique: 494)
+2026-08-22 02:15:00,398 - INFO - Processing batch: pages 34-36
+2026-08-22 02:15:00,399 - INFO - Fetching page 34...
+2026-08-22 02:15:00,403 - INFO - Fetching page 35...
+2026-08-22 02:15:00,406 - INFO - Fetching page 36...
+2026-08-22 02:15:01,017 - INFO - Page 35: found 15 player-list-item elements
+2026-08-22 02:15:01,279 - INFO - Page 34: found 15 player-list-item elements
+2026-08-22 02:15:01,361 - INFO - Page 36: found 15 player-list-item elements
+2026-08-22 02:15:01,445 - INFO - Completed page 35/100 (34/100 processed)
+2026-08-22 02:15:01,641 - INFO - Completed page 34/100 (35/100 processed)
+2026-08-22 02:15:01,679 - INFO - Completed page 36/100 (36/100 processed)
+2026-08-22 02:15:01,680 - INFO - Batch complete: added 45 new players (total unique: 539)
+2026-08-22 02:15:01,681 - INFO - Processing batch: pages 37-39
+2026-08-22 02:15:01,683 - INFO - Fetching page 37...
+2026-08-22 02:15:01,687 - INFO - Fetching page 38...
+2026-08-22 02:15:01,688 - INFO - Fetching page 39...
+2026-08-22 02:15:02,282 - INFO - Page 37: found 15 player-list-item elements
+2026-08-22 02:15:02,481 - INFO - Page 38: found 15 player-list-item elements
+2026-08-22 02:15:02,542 - INFO - Page 39: found 15 player-list-item elements
+2026-08-22 02:15:02,665 - INFO - Completed page 37/100 (37/100 processed)
+2026-08-22 02:15:02,927 - INFO - Completed page 38/100 (38/100 processed)
+2026-08-22 02:15:02,927 - INFO - Completed page 39/100 (39/100 processed)
+2026-08-22 02:15:02,929 - INFO - Batch complete: added 45 new players (total unique: 584)
+2026-08-22 02:15:02,930 - INFO - Processing batch: pages 40-42
+2026-08-22 02:15:02,930 - INFO - Fetching page 40...
+2026-08-22 02:15:02,931 - INFO - Fetching page 42...
+2026-08-22 02:15:02,930 - INFO - Fetching page 41...
+2026-08-22 02:15:03,287 - INFO - Page 40: found 15 player-list-item elements
+2026-08-22 02:15:03,321 - INFO - Page 42: found 15 player-list-item elements
+2026-08-22 02:15:03,599 - INFO - Page 41: found 15 player-list-item elements
+2026-08-22 02:15:03,672 - INFO - Completed page 40/100 (40/100 processed)
+2026-08-22 02:15:03,674 - INFO - Completed page 42/100 (41/100 processed)
+2026-08-22 02:15:03,955 - INFO - Completed page 41/100 (42/100 processed)
+2026-08-22 02:15:03,997 - INFO - Batch complete: added 44 new players (total unique: 628)
+2026-08-22 02:15:04,032 - INFO - Processing batch: pages 43-45
+2026-08-22 02:15:04,041 - INFO - Fetching page 43...
+2026-08-22 02:15:04,046 - INFO - Fetching page 44...
+2026-08-22 02:15:04,048 - INFO - Fetching page 45...
+2026-08-22 02:15:04,830 - INFO - Page 44: found 15 player-list-item elements
+2026-08-22 02:15:04,864 - INFO - Page 43: found 15 player-list-item elements
+2026-08-22 02:15:04,869 - INFO - Page 45: found 15 player-list-item elements
+2026-08-22 02:15:05,216 - INFO - Completed page 44/100 (43/100 processed)
+2026-08-22 02:15:05,229 - INFO - Completed page 43/100 (44/100 processed)
+2026-08-22 02:15:05,239 - INFO - Completed page 45/100 (45/100 processed)
+2026-08-22 02:15:05,240 - INFO - Batch complete: added 45 new players (total unique: 673)
+2026-08-22 02:15:05,244 - INFO - Processing batch: pages 46-48
+2026-08-22 02:15:05,245 - INFO - Fetching page 46...
+2026-08-22 02:15:05,246 - INFO - Fetching page 47...
+2026-08-22 02:15:05,247 - INFO - Fetching page 48...
+2026-08-22 02:15:05,682 - INFO - Page 48: found 15 player-list-item elements
+2026-08-22 02:15:06,021 - INFO - Page 47: found 15 player-list-item elements
+2026-08-22 02:15:06,028 - INFO - Page 46: found 15 player-list-item elements
+2026-08-22 02:15:06,099 - INFO - Completed page 48/100 (46/100 processed)
+2026-08-22 02:15:06,383 - INFO - Completed page 47/100 (47/100 processed)
+2026-08-22 02:15:06,389 - INFO - Completed page 46/100 (48/100 processed)
+2026-08-22 02:15:06,392 - INFO - Batch complete: added 45 new players (total unique: 718)
+2026-08-22 02:15:06,394 - INFO - Processing batch: pages 49-51
+2026-08-22 02:15:06,395 - INFO - Fetching page 49...
+2026-08-22 02:15:06,395 - INFO - Fetching page 50...
+2026-08-22 02:15:06,396 - INFO - Fetching page 51...
+2026-08-22 02:15:07,395 - INFO - Page 49: found 15 player-list-item elements
+2026-08-22 02:15:07,447 - INFO - Page 51: found 15 player-list-item elements
+2026-08-22 02:15:07,535 - INFO - Page 50: found 15 player-list-item elements
+2026-08-22 02:15:07,796 - INFO - Completed page 49/100 (49/100 processed)
+2026-08-22 02:15:07,837 - INFO - Completed page 51/100 (50/100 processed)
+2026-08-22 02:15:07,874 - INFO - Completed page 50/100 (51/100 processed)
+2026-08-22 02:15:07,880 - INFO - Batch complete: added 45 new players (total unique: 763)
+2026-08-22 02:15:07,882 - INFO - Processing batch: pages 52-54
+2026-08-22 02:15:07,882 - INFO - Fetching page 52...
+2026-08-22 02:15:07,885 - INFO - Fetching page 53...
+2026-08-22 02:15:07,895 - INFO - Fetching page 54...
+2026-08-22 02:15:08,713 - INFO - Page 52: found 15 player-list-item elements
+2026-08-22 02:15:08,827 - INFO - Page 54: found 15 player-list-item elements
+2026-08-22 02:15:08,896 - INFO - Page 53: found 15 player-list-item elements
+2026-08-22 02:15:09,137 - INFO - Completed page 52/100 (52/100 processed)
+2026-08-22 02:15:09,205 - INFO - Completed page 54/100 (53/100 processed)
+2026-08-22 02:15:09,259 - INFO - Completed page 53/100 (54/100 processed)
+2026-08-22 02:15:09,260 - INFO - Batch complete: added 45 new players (total unique: 808)
+2026-08-22 02:15:09,262 - INFO - Processing batch: pages 55-57
+2026-08-22 02:15:09,262 - INFO - Fetching page 55...
+2026-08-22 02:15:09,264 - INFO - Fetching page 56...
+2026-08-22 02:15:09,265 - INFO - Fetching page 57...
+2026-08-22 02:15:09,906 - INFO - Page 55: found 15 player-list-item elements
+2026-08-22 02:15:09,991 - INFO - Page 57: found 15 player-list-item elements
+2026-08-22 02:15:10,063 - INFO - Page 56: found 15 player-list-item elements
+2026-08-22 02:15:10,308 - INFO - Completed page 55/100 (55/100 processed)
+2026-08-22 02:15:10,344 - INFO - Completed page 57/100 (56/100 processed)
+2026-08-22 02:15:10,426 - INFO - Completed page 56/100 (57/100 processed)
+2026-08-22 02:15:10,427 - INFO - Batch complete: added 44 new players (total unique: 852)
+2026-08-22 02:15:10,430 - INFO - Processing batch: pages 58-60
+2026-08-22 02:15:10,430 - INFO - Fetching page 58...
+2026-08-22 02:15:10,433 - INFO - Fetching page 59...
+2026-08-22 02:15:10,436 - INFO - Fetching page 60...
+2026-08-22 02:15:11,097 - INFO - Page 60: found 15 player-list-item elements
+2026-08-22 02:15:11,130 - INFO - Page 58: found 15 player-list-item elements
+2026-08-22 02:15:11,133 - INFO - Page 59: found 15 player-list-item elements
+2026-08-22 02:15:11,463 - INFO - Completed page 60/100 (58/100 processed)
+2026-08-22 02:15:11,484 - INFO - Completed page 58/100 (59/100 processed)
+2026-08-22 02:15:11,499 - INFO - Completed page 59/100 (60/100 processed)
+2026-08-22 02:15:11,501 - INFO - Batch complete: added 45 new players (total unique: 897)
+2026-08-22 02:15:11,503 - INFO - Processing batch: pages 61-63
+2026-08-22 02:15:11,508 - INFO - Fetching page 61...
+2026-08-22 02:15:11,513 - INFO - Fetching page 62...
+2026-08-22 02:15:11,528 - INFO - Fetching page 63...
+2026-08-22 02:15:12,070 - INFO - Page 62: found 15 player-list-item elements
+2026-08-22 02:15:12,169 - INFO - Page 63: found 15 player-list-item elements
+2026-08-22 02:15:12,282 - INFO - Page 61: found 15 player-list-item elements
+2026-08-22 02:15:12,463 - INFO - Completed page 62/100 (61/100 processed)
+2026-08-22 02:15:12,561 - INFO - Completed page 63/100 (62/100 processed)
+2026-08-22 02:15:12,609 - INFO - Completed page 61/100 (63/100 processed)
+2026-08-22 02:15:12,612 - INFO - Batch complete: added 45 new players (total unique: 942)
+2026-08-22 02:15:12,616 - INFO - Processing batch: pages 64-66
+2026-08-22 02:15:12,618 - INFO - Fetching page 64...
+2026-08-22 02:15:12,620 - INFO - Fetching page 65...
+2026-08-22 02:15:12,622 - INFO - Fetching page 66...
+2026-08-22 02:15:13,171 - INFO - Page 64: found 15 player-list-item elements
+2026-08-22 02:15:13,433 - INFO - Page 65: found 15 player-list-item elements
+2026-08-22 02:15:13,548 - INFO - Page 66: found 15 player-list-item elements
+2026-08-22 02:15:13,595 - INFO - Completed page 64/100 (64/100 processed)
+2026-08-22 02:15:13,845 - INFO - Completed page 65/100 (65/100 processed)
+2026-08-22 02:15:13,884 - INFO - Completed page 66/100 (66/100 processed)
+2026-08-22 02:15:13,885 - INFO - Batch complete: added 45 new players (total unique: 987)
+2026-08-22 02:15:13,887 - INFO - Processing batch: pages 67-69
+2026-08-22 02:15:13,889 - INFO - Fetching page 67...
+2026-08-22 02:15:13,899 - INFO - Fetching page 68...
+2026-08-22 02:15:13,908 - INFO - Fetching page 69...
+2026-08-22 02:15:14,556 - INFO - Page 68: found 15 player-list-item elements
+2026-08-22 02:15:14,706 - INFO - Page 67: found 15 player-list-item elements
+2026-08-22 02:15:14,731 - INFO - Page 69: found 15 player-list-item elements
+2026-08-22 02:15:15,004 - INFO - Completed page 68/100 (67/100 processed)
+2026-08-22 02:15:15,122 - INFO - Completed page 67/100 (68/100 processed)
+2026-08-22 02:15:15,123 - INFO - Completed page 69/100 (69/100 processed)
+2026-08-22 02:15:15,141 - INFO - Batch complete: added 45 new players (total unique: 1032)
+2026-08-22 02:15:15,144 - INFO - Processing batch: pages 70-72
+2026-08-22 02:15:15,144 - INFO - Fetching page 70...
+2026-08-22 02:15:15,145 - INFO - Fetching page 71...
+2026-08-22 02:15:15,146 - INFO - Fetching page 72...
+2026-08-22 02:15:15,695 - INFO - Page 72: found 15 player-list-item elements
+2026-08-22 02:15:15,788 - INFO - Page 71: found 15 player-list-item elements
+2026-08-22 02:15:15,798 - INFO - Page 70: found 15 player-list-item elements
+2026-08-22 02:15:16,088 - INFO - Completed page 72/100 (70/100 processed)
+2026-08-22 02:15:16,128 - INFO - Completed page 71/100 (71/100 processed)
+2026-08-22 02:15:16,147 - INFO - Completed page 70/100 (72/100 processed)
+2026-08-22 02:15:16,147 - INFO - Batch complete: added 45 new players (total unique: 1077)
+2026-08-22 02:15:16,150 - INFO - Processing batch: pages 73-75
+2026-08-22 02:15:16,150 - INFO - Fetching page 73...
+2026-08-22 02:15:16,152 - INFO - Fetching page 74...
+2026-08-22 02:15:16,153 - INFO - Fetching page 75...
+2026-08-22 02:15:16,598 - INFO - Page 73: found 15 player-list-item elements
+2026-08-22 02:15:16,797 - INFO - Page 75: found 15 player-list-item elements
+2026-08-22 02:15:16,907 - INFO - Page 74: found 15 player-list-item elements
+2026-08-22 02:15:17,039 - INFO - Completed page 73/100 (73/100 processed)
+2026-08-22 02:15:17,145 - INFO - Completed page 75/100 (74/100 processed)
+2026-08-22 02:15:17,236 - INFO - Completed page 74/100 (75/100 processed)
+2026-08-22 02:15:17,245 - INFO - Batch complete: added 45 new players (total unique: 1122)
+2026-08-22 02:15:17,249 - INFO - Processing batch: pages 76-78
+2026-08-22 02:15:17,261 - INFO - Fetching page 76...
+2026-08-22 02:15:17,264 - INFO - Fetching page 77...
+2026-08-22 02:15:17,267 - INFO - Fetching page 78...
+2026-08-22 02:15:18,230 - INFO - Page 78: found 15 player-list-item elements
+2026-08-22 02:15:18,361 - INFO - Page 77: found 15 player-list-item elements
+2026-08-22 02:15:18,447 - INFO - Page 76: found 15 player-list-item elements
+2026-08-22 02:15:18,650 - INFO - Completed page 78/100 (76/100 processed)
+2026-08-22 02:15:18,717 - INFO - Completed page 77/100 (77/100 processed)
+2026-08-22 02:15:18,775 - INFO - Completed page 76/100 (78/100 processed)
+2026-08-22 02:15:18,776 - INFO - Batch complete: added 45 new players (total unique: 1167)
+2026-08-22 02:15:18,779 - INFO - Processing batch: pages 79-81
+2026-08-22 02:15:18,797 - INFO - Fetching page 79...
+2026-08-22 02:15:18,800 - INFO - Fetching page 80...
+2026-08-22 02:15:18,824 - INFO - Fetching page 81...
+2026-08-22 02:15:19,597 - INFO - Page 81: found 15 player-list-item elements
+2026-08-22 02:15:19,637 - INFO - Page 79: found 15 player-list-item elements
+2026-08-22 02:15:19,690 - INFO - Page 80: found 15 player-list-item elements
+2026-08-22 02:15:20,000 - INFO - Completed page 81/100 (79/100 processed)
+2026-08-22 02:15:20,040 - INFO - Completed page 79/100 (80/100 processed)
+2026-08-22 02:15:20,040 - INFO - Completed page 80/100 (81/100 processed)
+2026-08-22 02:15:20,041 - INFO - Batch complete: added 45 new players (total unique: 1212)
+2026-08-22 02:15:20,047 - INFO - Processing batch: pages 82-84
+2026-08-22 02:15:20,047 - INFO - Fetching page 82...
+2026-08-22 02:15:20,048 - INFO - Fetching page 83...
+2026-08-22 02:15:20,050 - INFO - Fetching page 84...
+2026-08-22 02:15:20,706 - INFO - Page 82: found 15 player-list-item elements
+2026-08-22 02:15:20,821 - INFO - Page 84: found 15 player-list-item elements
+2026-08-22 02:15:20,957 - INFO - Page 83: found 15 player-list-item elements
+2026-08-22 02:15:21,118 - INFO - Completed page 82/100 (82/100 processed)
+2026-08-22 02:15:21,173 - INFO - Completed page 84/100 (83/100 processed)
+2026-08-22 02:15:21,284 - INFO - Completed page 83/100 (84/100 processed)
+2026-08-22 02:15:21,305 - INFO - Batch complete: added 45 new players (total unique: 1257)
+2026-08-22 02:15:21,308 - INFO - Processing batch: pages 85-87
+2026-08-22 02:15:21,311 - INFO - Fetching page 85...
+2026-08-22 02:15:21,314 - INFO - Fetching page 86...
+2026-08-22 02:15:21,323 - INFO - Fetching page 87...
+2026-08-22 02:15:21,923 - INFO - Page 86: found 15 player-list-item elements
+2026-08-22 02:15:21,988 - INFO - Page 85: found 15 player-list-item elements
+2026-08-22 02:15:22,140 - INFO - Page 87: found 15 player-list-item elements
+2026-08-22 02:15:22,368 - INFO - Completed page 85/100 (85/100 processed)
+2026-08-22 02:15:22,392 - INFO - Completed page 86/100 (86/100 processed)
+2026-08-22 02:15:22,473 - INFO - Completed page 87/100 (87/100 processed)
+2026-08-22 02:15:22,473 - INFO - Batch complete: added 45 new players (total unique: 1302)
+2026-08-22 02:15:22,476 - INFO - Processing batch: pages 88-90
+2026-08-22 02:15:22,477 - INFO - Fetching page 88...
+2026-08-22 02:15:22,479 - INFO - Fetching page 89...
+2026-08-22 02:15:22,480 - INFO - Fetching page 90...
+2026-08-22 02:15:23,011 - INFO - Page 90: found 15 player-list-item elements
+2026-08-22 02:15:23,115 - INFO - Page 88: found 15 player-list-item elements
+2026-08-22 02:15:23,218 - INFO - Page 89: found 15 player-list-item elements
+2026-08-22 02:15:23,413 - INFO - Completed page 90/100 (88/100 processed)
+2026-08-22 02:15:23,476 - INFO - Completed page 88/100 (89/100 processed)
+2026-08-22 02:15:23,535 - INFO - Completed page 89/100 (90/100 processed)
+2026-08-22 02:15:23,547 - INFO - Batch complete: added 45 new players (total unique: 1347)
+2026-08-22 02:15:23,555 - INFO - Processing batch: pages 91-93
+2026-08-22 02:15:23,558 - INFO - Fetching page 91...
+2026-08-22 02:15:23,562 - INFO - Fetching page 92...
+2026-08-22 02:15:23,569 - INFO - Fetching page 93...
+2026-08-22 02:15:24,032 - INFO - Page 92: found 15 player-list-item elements
+2026-08-22 02:15:24,296 - INFO - Page 93: found 15 player-list-item elements
+2026-08-22 02:15:24,347 - INFO - Page 91: found 15 player-list-item elements
+2026-08-22 02:15:24,414 - INFO - Completed page 92/100 (91/100 processed)
+2026-08-22 02:15:24,658 - INFO - Completed page 93/100 (92/100 processed)
+2026-08-22 02:15:24,675 - INFO - Completed page 91/100 (93/100 processed)
+2026-08-22 02:15:24,676 - INFO - Batch complete: added 45 new players (total unique: 1392)
+2026-08-22 02:15:24,679 - INFO - Processing batch: pages 94-96
+2026-08-22 02:15:24,680 - INFO - Fetching page 94...
+2026-08-22 02:15:24,683 - INFO - Fetching page 95...
+2026-08-22 02:15:24,683 - INFO - Fetching page 96...
+2026-08-22 02:15:25,315 - INFO - Page 95: found 15 player-list-item elements
+2026-08-22 02:15:25,320 - INFO - Page 94: found 15 player-list-item elements
+2026-08-22 02:15:25,317 - INFO - Page 96: found 15 player-list-item elements
+2026-08-22 02:15:25,659 - INFO - Completed page 94/100 (94/100 processed)
+2026-08-22 02:15:25,686 - INFO - Completed page 95/100 (95/100 processed)
+2026-08-22 02:15:25,687 - INFO - Completed page 96/100 (96/100 processed)
+2026-08-22 02:15:25,688 - INFO - Batch complete: added 45 new players (total unique: 1437)
+2026-08-22 02:15:25,690 - INFO - Processing batch: pages 97-99
+2026-08-22 02:15:25,691 - INFO - Fetching page 97...
+2026-08-22 02:15:25,694 - INFO - Fetching page 98...
+2026-08-22 02:15:25,695 - INFO - Fetching page 99...
+2026-08-22 02:15:26,129 - INFO - Page 97: found 15 player-list-item elements
+2026-08-22 02:15:26,217 - INFO - Page 99: found 15 player-list-item elements
+2026-08-22 02:15:26,383 - INFO - Page 98: found 15 player-list-item elements
+2026-08-22 02:15:26,500 - INFO - Completed page 97/100 (97/100 processed)
+2026-08-22 02:15:26,546 - INFO - Completed page 99/100 (98/100 processed)
+2026-08-22 02:15:26,713 - INFO - Completed page 98/100 (99/100 processed)
+2026-08-22 02:15:26,715 - INFO - Batch complete: added 45 new players (total unique: 1482)
+2026-08-22 02:15:26,718 - INFO - Processing batch: pages 100-100
+2026-08-22 02:15:26,719 - INFO - Fetching page 100...
+2026-08-22 02:15:27,109 - INFO - Page 100: found 15 player-list-item elements
+2026-08-22 02:15:27,440 - INFO - Completed page 100/100 (100/100 processed)
+2026-08-22 02:15:27,442 - INFO - Batch complete: added 15 new players (total unique: 1497)
+2026-08-22 02:15:27,456 - INFO - Parallel scrape completed in 40.25s (0.67 minutes)
+2026-08-22 02:15:27,458 - INFO - Processed 100 pages with 0 errors
+2026-08-22 02:15:27,458 - INFO - Total unique players: 1497
+2026-08-22 02:15:27,465 - INFO - Cleared progress file
+2026-08-22 02:15:27,465 - INFO - Exporting data...
+2026-08-22 02:15:27,507 - INFO - Saved 1497 players to ../Data/mut27_players.json
+2026-08-22 02:15:27,507 - INFO - ============================================================
+2026-08-22 02:15:27,510 - INFO - SCRAPER SUMMARY
+2026-08-22 02:15:27,510 - INFO - ============================================================
+2026-08-22 02:15:27,510 - INFO - Total players scraped: 1497
+2026-08-22 02:15:27,511 - INFO - Total time elapsed: 40.31s (0.67 minutes)
+2026-08-22 02:15:27,511 - INFO - Average rate: 37.14 players/second
+2026-08-22 02:15:27,512 - INFO - Players with prices: 0
+2026-08-22 02:15:27,513 - INFO - Exported files: 1
+2026-08-22 02:15:27,513 - INFO -   - ../Data/mut27_players.json
+2026-08-22 02:15:27,514 - INFO - ============================================================
+2026-08-22 02:15:27,514 - INFO - Scraping completed successfully!
+2026-08-22 02:16:33,173 - INFO - Loaded configuration from /Users/finessekid/Desktop/^^MUT^^/main-project/scrapper/scraper_config.json
+2026-08-22 02:16:33,223 - INFO - ============================================================
+2026-08-22 02:16:33,224 - INFO - Enhanced MUT.GG Player Scraper
+2026-08-22 02:16:33,224 - INFO - ============================================================
+2026-08-22 02:16:33,224 - INFO - Configuration:
+2026-08-22 02:16:33,224 - INFO -   Pages to scrape: 100
+2026-08-22 02:16:33,265 - INFO -   Parallel workers: 3
+2026-08-22 02:16:33,270 - INFO -   Output format: all
+2026-08-22 02:16:33,271 - INFO -   Output directory: ../Data
+2026-08-22 02:16:33,271 - INFO -   External IDs only: True
+2026-08-22 02:16:33,273 - INFO -   Resume mode: False
+2026-08-22 02:16:33,275 - INFO -   Request timeout: 30s
+2026-08-22 02:16:33,275 - INFO -   Retry attempts: 3
+2026-08-22 02:16:33,278 - INFO -   Core-data scraping: False
+2026-08-22 02:16:33,282 - INFO - ============================================================
+2026-08-22 02:16:33,283 - INFO - Starting parallel scrape with 3 workers from page 1 to 100
+2026-08-22 02:16:33,284 - INFO - Processing batch: pages 1-3
+2026-08-22 02:16:33,284 - INFO - Fetching page 1...
+2026-08-22 02:16:33,289 - INFO - Fetching page 2...
+2026-08-22 02:16:33,290 - INFO - Fetching page 3...
+2026-08-22 02:16:34,454 - INFO - Page 3: found 15 player-list-item elements
+2026-08-22 02:16:34,456 - INFO - Page 1: found 15 player-list-item elements
+2026-08-22 02:16:34,456 - INFO - Page 2: found 15 player-list-item elements
+2026-08-22 02:16:34,803 - INFO - Completed page 3/100 (1/100 processed)
+2026-08-22 02:16:34,815 - INFO - Completed page 1/100 (2/100 processed)
+2026-08-22 02:16:34,831 - INFO - Completed page 2/100 (3/100 processed)
+2026-08-22 02:16:34,834 - INFO - Batch complete: added 45 new players (total unique: 45)
+2026-08-22 02:16:34,835 - INFO - Processing batch: pages 4-6
+2026-08-22 02:16:34,836 - INFO - Fetching page 4...
+2026-08-22 02:16:34,837 - INFO - Fetching page 5...
+2026-08-22 02:16:34,841 - INFO - Fetching page 6...
+2026-08-22 02:16:35,136 - INFO - Page 5: found 15 player-list-item elements
+2026-08-22 02:16:35,572 - INFO - Completed page 5/100 (4/100 processed)
+2026-08-22 02:16:35,603 - INFO - Page 4: found 15 player-list-item elements
+2026-08-22 02:16:35,692 - INFO - Page 6: found 15 player-list-item elements
+2026-08-22 02:16:35,975 - INFO - Completed page 4/100 (5/100 processed)
+2026-08-22 02:16:36,019 - INFO - Completed page 6/100 (6/100 processed)
+2026-08-22 02:16:36,020 - INFO - Batch complete: added 45 new players (total unique: 90)
+2026-08-22 02:16:36,021 - INFO - Processing batch: pages 7-9
+2026-08-22 02:16:36,022 - INFO - Fetching page 7...
+2026-08-22 02:16:36,022 - INFO - Fetching page 8...
+2026-08-22 02:16:36,025 - INFO - Fetching page 9...
+2026-08-22 02:16:36,639 - INFO - Page 7: found 15 player-list-item elements
+2026-08-22 02:16:36,983 - INFO - Page 8: found 15 player-list-item elements
+2026-08-22 02:16:37,132 - INFO - Completed page 7/100 (7/100 processed)
+2026-08-22 02:16:37,207 - INFO - Page 9: found 15 player-list-item elements
+2026-08-22 02:16:37,520 - INFO - Completed page 8/100 (8/100 processed)
+2026-08-22 02:16:37,609 - INFO - Completed page 9/100 (9/100 processed)
+2026-08-22 02:16:37,629 - INFO - Batch complete: added 44 new players (total unique: 134)
+2026-08-22 02:16:37,630 - INFO - Processing batch: pages 10-12
+2026-08-22 02:16:37,631 - INFO - Fetching page 10...
+2026-08-22 02:16:37,632 - INFO - Fetching page 11...
+2026-08-22 02:16:37,633 - INFO - Fetching page 12...
+2026-08-22 02:16:38,623 - INFO - Page 10: found 15 player-list-item elements
+2026-08-22 02:16:39,158 - INFO - Page 12: found 15 player-list-item elements
+2026-08-22 02:16:39,298 - INFO - Page 11: found 15 player-list-item elements
+2026-08-22 02:16:39,592 - INFO - Completed page 10/100 (10/100 processed)
+2026-08-22 02:16:39,648 - INFO - Completed page 12/100 (11/100 processed)
+2026-08-22 02:16:39,662 - INFO - Completed page 11/100 (12/100 processed)
+2026-08-22 02:16:39,669 - INFO - Batch complete: added 45 new players (total unique: 179)
+2026-08-22 02:16:39,670 - INFO - Processing batch: pages 13-15
+2026-08-22 02:16:39,671 - INFO - Fetching page 13...
+2026-08-22 02:16:39,672 - INFO - Fetching page 14...
+2026-08-22 02:16:39,673 - INFO - Fetching page 15...
+2026-08-22 02:16:40,632 - INFO - Page 15: found 15 player-list-item elements
+2026-08-22 02:16:40,711 - INFO - Page 13: found 15 player-list-item elements
+2026-08-22 02:16:40,731 - INFO - Page 14: found 15 player-list-item elements
+2026-08-22 02:16:41,032 - INFO - Completed page 15/100 (13/100 processed)
+2026-08-22 02:16:41,059 - INFO - Completed page 13/100 (14/100 processed)
+2026-08-22 02:16:41,076 - INFO - Completed page 14/100 (15/100 processed)
+2026-08-22 02:16:41,077 - INFO - Batch complete: added 45 new players (total unique: 224)
+2026-08-22 02:16:41,080 - INFO - Processing batch: pages 16-18
+2026-08-22 02:16:41,080 - INFO - Fetching page 16...
+2026-08-22 02:16:41,081 - INFO - Fetching page 17...
+2026-08-22 02:16:41,081 - INFO - Fetching page 18...
+2026-08-22 02:16:41,894 - INFO - Page 18: found 15 player-list-item elements
+2026-08-22 02:16:41,915 - INFO - Page 16: found 15 player-list-item elements
+2026-08-22 02:16:41,968 - INFO - Page 17: found 15 player-list-item elements
+2026-08-22 02:16:42,264 - INFO - Completed page 18/100 (16/100 processed)
+2026-08-22 02:16:42,292 - INFO - Completed page 16/100 (17/100 processed)
+2026-08-22 02:16:42,302 - INFO - Completed page 17/100 (18/100 processed)
+2026-08-22 02:16:42,303 - INFO - Batch complete: added 45 new players (total unique: 269)
+2026-08-22 02:16:42,304 - INFO - Processing batch: pages 19-21
+2026-08-22 02:16:42,305 - INFO - Fetching page 19...
+2026-08-22 02:16:42,305 - INFO - Fetching page 20...
+2026-08-22 02:16:42,312 - INFO - Fetching page 21...
+2026-08-22 02:16:42,962 - INFO - Page 20: found 15 player-list-item elements
+2026-08-22 02:16:43,090 - INFO - Page 21: found 15 player-list-item elements
+2026-08-22 02:16:43,091 - INFO - Page 19: found 15 player-list-item elements
+2026-08-22 02:16:43,370 - INFO - Completed page 20/100 (19/100 processed)
+2026-08-22 02:16:43,412 - INFO - Completed page 21/100 (20/100 processed)
+2026-08-22 02:16:43,432 - INFO - Completed page 19/100 (21/100 processed)
+2026-08-22 02:16:43,434 - INFO - Batch complete: added 45 new players (total unique: 314)
+2026-08-22 02:16:43,437 - INFO - Processing batch: pages 22-24
+2026-08-22 02:16:43,438 - INFO - Fetching page 22...
+2026-08-22 02:16:43,439 - INFO - Fetching page 23...
+2026-08-22 02:16:43,440 - INFO - Fetching page 24...
+2026-08-22 02:16:44,034 - INFO - Page 23: found 15 player-list-item elements
+2026-08-22 02:16:44,146 - INFO - Page 22: found 15 player-list-item elements
+2026-08-22 02:16:44,308 - INFO - Page 24: found 15 player-list-item elements
+2026-08-22 02:16:44,429 - INFO - Completed page 23/100 (22/100 processed)
+2026-08-22 02:16:44,588 - INFO - Completed page 22/100 (23/100 processed)
+2026-08-22 02:16:44,643 - INFO - Completed page 24/100 (24/100 processed)
+2026-08-22 02:16:44,644 - INFO - Batch complete: added 45 new players (total unique: 359)
+2026-08-22 02:16:44,646 - INFO - Processing batch: pages 25-27
+2026-08-22 02:16:44,648 - INFO - Fetching page 25...
+2026-08-22 02:16:44,650 - INFO - Fetching page 26...
+2026-08-22 02:16:44,652 - INFO - Fetching page 27...
+2026-08-22 02:16:45,217 - INFO - Page 27: found 15 player-list-item elements
+2026-08-22 02:16:45,431 - INFO - Page 25: found 15 player-list-item elements
+2026-08-22 02:16:45,455 - INFO - Page 26: found 15 player-list-item elements
+2026-08-22 02:16:45,725 - INFO - Completed page 27/100 (25/100 processed)
+2026-08-22 02:16:45,775 - INFO - Completed page 25/100 (26/100 processed)
+2026-08-22 02:16:45,789 - INFO - Completed page 26/100 (27/100 processed)
+2026-08-22 02:16:45,790 - INFO - Batch complete: added 45 new players (total unique: 404)
+2026-08-22 02:16:45,796 - INFO - Processing batch: pages 28-30
+2026-08-22 02:16:45,797 - INFO - Fetching page 28...
+2026-08-22 02:16:45,797 - INFO - Fetching page 30...
+2026-08-22 02:16:45,797 - INFO - Fetching page 29...
+2026-08-22 02:16:46,212 - INFO - Page 30: found 15 player-list-item elements
+2026-08-22 02:16:46,375 - INFO - Page 28: found 15 player-list-item elements
+2026-08-22 02:16:46,587 - INFO - Page 29: found 15 player-list-item elements
+2026-08-22 02:16:46,606 - INFO - Completed page 30/100 (28/100 processed)
+2026-08-22 02:16:46,746 - INFO - Completed page 28/100 (29/100 processed)
+2026-08-22 02:16:46,921 - INFO - Completed page 29/100 (30/100 processed)
+2026-08-22 02:16:46,934 - INFO - Batch complete: added 45 new players (total unique: 449)
+2026-08-22 02:16:46,965 - INFO - Processing batch: pages 31-33
+2026-08-22 02:16:46,969 - INFO - Fetching page 31...
+2026-08-22 02:16:46,996 - INFO - Fetching page 32...
+2026-08-22 02:16:47,014 - INFO - Fetching page 33...
+2026-08-22 02:16:47,319 - INFO - Page 31: found 15 player-list-item elements
+2026-08-22 02:16:47,539 - INFO - Page 32: found 15 player-list-item elements
+2026-08-22 02:16:47,544 - INFO - Page 33: found 15 player-list-item elements
+2026-08-22 02:16:47,648 - INFO - Completed page 31/100 (31/100 processed)
+2026-08-22 02:16:47,910 - INFO - Completed page 32/100 (32/100 processed)
+2026-08-22 02:16:47,911 - INFO - Completed page 33/100 (33/100 processed)
+2026-08-22 02:16:47,912 - INFO - Batch complete: added 45 new players (total unique: 494)
+2026-08-22 02:16:47,914 - INFO - Processing batch: pages 34-36
+2026-08-22 02:16:47,914 - INFO - Fetching page 34...
+2026-08-22 02:16:47,915 - INFO - Fetching page 35...
+2026-08-22 02:16:47,916 - INFO - Fetching page 36...
+2026-08-22 02:16:48,531 - INFO - Page 36: found 15 player-list-item elements
+2026-08-22 02:16:48,580 - INFO - Page 35: found 15 player-list-item elements
+2026-08-22 02:16:48,576 - INFO - Page 34: found 15 player-list-item elements
+2026-08-22 02:16:48,893 - INFO - Completed page 36/100 (34/100 processed)
+2026-08-22 02:16:48,936 - INFO - Completed page 35/100 (35/100 processed)
+2026-08-22 02:16:48,936 - INFO - Completed page 34/100 (36/100 processed)
+2026-08-22 02:16:48,956 - INFO - Batch complete: added 45 new players (total unique: 539)
+2026-08-22 02:16:48,958 - INFO - Processing batch: pages 37-39
+2026-08-22 02:16:48,967 - INFO - Fetching page 37...
+2026-08-22 02:16:48,976 - INFO - Fetching page 38...
+2026-08-22 02:16:48,979 - INFO - Fetching page 39...
+2026-08-22 02:16:49,286 - INFO - Page 39: found 15 player-list-item elements
+2026-08-22 02:16:49,416 - INFO - Page 38: found 15 player-list-item elements
+2026-08-22 02:16:49,480 - INFO - Page 37: found 15 player-list-item elements
+2026-08-22 02:16:49,676 - INFO - Completed page 39/100 (37/100 processed)
+2026-08-22 02:16:49,766 - INFO - Completed page 38/100 (38/100 processed)
+2026-08-22 02:16:49,871 - INFO - Completed page 37/100 (39/100 processed)
+2026-08-22 02:16:49,872 - INFO - Batch complete: added 45 new players (total unique: 584)
+2026-08-22 02:16:49,874 - INFO - Processing batch: pages 40-42
+2026-08-22 02:16:49,874 - INFO - Fetching page 40...
+2026-08-22 02:16:49,875 - INFO - Fetching page 41...
+2026-08-22 02:16:49,879 - INFO - Fetching page 42...
+2026-08-22 02:16:50,357 - INFO - Page 40: found 15 player-list-item elements
+2026-08-22 02:16:50,483 - INFO - Page 42: found 15 player-list-item elements
+2026-08-22 02:16:50,536 - INFO - Page 41: found 15 player-list-item elements
+2026-08-22 02:16:50,783 - INFO - Completed page 40/100 (40/100 processed)
+2026-08-22 02:16:50,834 - INFO - Completed page 42/100 (41/100 processed)
+2026-08-22 02:16:50,870 - INFO - Completed page 41/100 (42/100 processed)
+2026-08-22 02:16:50,871 - INFO - Batch complete: added 44 new players (total unique: 628)
+2026-08-22 02:16:50,873 - INFO - Processing batch: pages 43-45
+2026-08-22 02:16:50,874 - INFO - Fetching page 43...
+2026-08-22 02:16:50,877 - INFO - Fetching page 44...
+2026-08-22 02:16:50,880 - INFO - Fetching page 45...
+2026-08-22 02:16:51,360 - INFO - Page 45: found 15 player-list-item elements
+2026-08-22 02:16:51,538 - INFO - Page 44: found 15 player-list-item elements
+2026-08-22 02:16:51,560 - INFO - Page 43: found 15 player-list-item elements
+2026-08-22 02:16:51,762 - INFO - Completed page 45/100 (43/100 processed)
+2026-08-22 02:16:51,887 - INFO - Completed page 44/100 (44/100 processed)
+2026-08-22 02:16:51,898 - INFO - Completed page 43/100 (45/100 processed)
+2026-08-22 02:16:51,899 - INFO - Batch complete: added 45 new players (total unique: 673)
+2026-08-22 02:16:51,900 - INFO - Processing batch: pages 46-48
+2026-08-22 02:16:51,901 - INFO - Fetching page 46...
+2026-08-22 02:16:51,901 - INFO - Fetching page 47...
+2026-08-22 02:16:51,902 - INFO - Fetching page 48...
+2026-08-22 02:16:52,342 - INFO - Page 47: found 15 player-list-item elements
+2026-08-22 02:16:52,623 - INFO - Page 46: found 15 player-list-item elements
+2026-08-22 02:16:52,625 - INFO - Page 48: found 15 player-list-item elements
+2026-08-22 02:16:52,782 - INFO - Completed page 47/100 (46/100 processed)
+2026-08-22 02:16:53,038 - INFO - Completed page 46/100 (47/100 processed)
+2026-08-22 02:16:53,039 - INFO - Completed page 48/100 (48/100 processed)
+2026-08-22 02:16:53,041 - INFO - Batch complete: added 45 new players (total unique: 718)
+2026-08-22 02:16:53,043 - INFO - Processing batch: pages 49-51
+2026-08-22 02:16:53,045 - INFO - Fetching page 49...
+2026-08-22 02:16:53,046 - INFO - Fetching page 50...
+2026-08-22 02:16:53,048 - INFO - Fetching page 51...
+2026-08-22 02:16:54,040 - INFO - Page 49: found 15 player-list-item elements
+2026-08-22 02:16:54,423 - INFO - Page 50: found 15 player-list-item elements
+2026-08-22 02:16:54,455 - INFO - Page 51: found 15 player-list-item elements
+2026-08-22 02:16:54,641 - INFO - Completed page 49/100 (49/100 processed)
+2026-08-22 02:16:54,782 - INFO - Completed page 50/100 (50/100 processed)
+2026-08-22 02:16:54,808 - INFO - Completed page 51/100 (51/100 processed)
+2026-08-22 02:16:54,814 - INFO - Batch complete: added 45 new players (total unique: 763)
+2026-08-22 02:16:54,818 - INFO - Processing batch: pages 52-54
+2026-08-22 02:16:54,819 - INFO - Fetching page 52...
+2026-08-22 02:16:54,821 - INFO - Fetching page 53...
+2026-08-22 02:16:54,825 - INFO - Fetching page 54...
+2026-08-22 02:16:55,639 - INFO - Page 52: found 15 player-list-item elements
+2026-08-22 02:16:55,649 - INFO - Page 53: found 15 player-list-item elements
+2026-08-22 02:16:55,775 - INFO - Page 54: found 15 player-list-item elements
+2026-08-22 02:16:56,029 - INFO - Completed page 52/100 (52/100 processed)
+2026-08-22 02:16:56,044 - INFO - Completed page 53/100 (53/100 processed)
+2026-08-22 02:16:56,102 - INFO - Completed page 54/100 (54/100 processed)
+2026-08-22 02:16:56,106 - INFO - Batch complete: added 45 new players (total unique: 808)
+2026-08-22 02:16:56,108 - INFO - Processing batch: pages 55-57
+2026-08-22 02:16:56,109 - INFO - Fetching page 55...
+2026-08-22 02:16:56,110 - INFO - Fetching page 56...
+2026-08-22 02:16:56,114 - INFO - Fetching page 57...
+2026-08-22 02:16:56,692 - INFO - Page 57: found 15 player-list-item elements
+2026-08-22 02:16:56,698 - INFO - Page 55: found 15 player-list-item elements
+2026-08-22 02:16:56,778 - INFO - Page 56: found 15 player-list-item elements
+2026-08-22 02:16:57,061 - INFO - Completed page 57/100 (55/100 processed)
+2026-08-22 02:16:57,068 - INFO - Completed page 55/100 (56/100 processed)
+2026-08-22 02:16:57,094 - INFO - Completed page 56/100 (57/100 processed)
+2026-08-22 02:16:57,095 - INFO - Batch complete: added 44 new players (total unique: 852)
+2026-08-22 02:16:57,098 - INFO - Processing batch: pages 58-60
+2026-08-22 02:16:57,098 - INFO - Fetching page 58...
+2026-08-22 02:16:57,099 - INFO - Fetching page 60...
+2026-08-22 02:16:57,099 - INFO - Fetching page 59...
+2026-08-22 02:16:57,421 - INFO - Page 58: found 15 player-list-item elements
+2026-08-22 02:16:57,704 - INFO - Page 59: found 15 player-list-item elements
+2026-08-22 02:16:57,750 - INFO - Completed page 58/100 (58/100 processed)
+2026-08-22 02:16:57,833 - INFO - Page 60: found 15 player-list-item elements
+2026-08-22 02:16:58,067 - INFO - Completed page 59/100 (59/100 processed)
+2026-08-22 02:16:58,152 - INFO - Completed page 60/100 (60/100 processed)
+2026-08-22 02:16:58,154 - INFO - Batch complete: added 45 new players (total unique: 897)
+2026-08-22 02:16:58,156 - INFO - Processing batch: pages 61-63
+2026-08-22 02:16:58,157 - INFO - Fetching page 61...
+2026-08-22 02:16:58,158 - INFO - Fetching page 62...
+2026-08-22 02:16:58,160 - INFO - Fetching page 63...
+2026-08-22 02:16:58,686 - INFO - Page 61: found 15 player-list-item elements
+2026-08-22 02:16:58,742 - INFO - Page 63: found 15 player-list-item elements
+2026-08-22 02:16:58,938 - INFO - Page 62: found 15 player-list-item elements
+2026-08-22 02:16:59,093 - INFO - Completed page 61/100 (61/100 processed)
+2026-08-22 02:16:59,098 - INFO - Completed page 63/100 (62/100 processed)
+2026-08-22 02:16:59,260 - INFO - Completed page 62/100 (63/100 processed)
+2026-08-22 02:16:59,261 - INFO - Batch complete: added 45 new players (total unique: 942)
+2026-08-22 02:16:59,263 - INFO - Processing batch: pages 64-66
+2026-08-22 02:16:59,264 - INFO - Fetching page 64...
+2026-08-22 02:16:59,265 - INFO - Fetching page 65...
+2026-08-22 02:16:59,267 - INFO - Fetching page 66...
+2026-08-22 02:16:59,556 - INFO - Page 65: found 15 player-list-item elements
+2026-08-22 02:16:59,787 - INFO - Page 64: found 15 player-list-item elements
+2026-08-22 02:16:59,895 - INFO - Completed page 65/100 (64/100 processed)
+2026-08-22 02:16:59,973 - INFO - Page 66: found 15 player-list-item elements
+2026-08-22 02:17:00,176 - INFO - Completed page 64/100 (65/100 processed)
+2026-08-22 02:17:00,310 - INFO - Completed page 66/100 (66/100 processed)
+2026-08-22 02:17:00,312 - INFO - Batch complete: added 45 new players (total unique: 987)
+2026-08-22 02:17:00,317 - INFO - Processing batch: pages 67-69
+2026-08-22 02:17:00,318 - INFO - Fetching page 67...
+2026-08-22 02:17:00,319 - INFO - Fetching page 69...
+2026-08-22 02:17:00,319 - INFO - Fetching page 68...
+2026-08-22 02:17:00,782 - INFO - Page 69: found 15 player-list-item elements
+2026-08-22 02:17:00,904 - INFO - Page 67: found 15 player-list-item elements
+2026-08-22 02:17:01,147 - INFO - Completed page 69/100 (67/100 processed)
+2026-08-22 02:17:01,238 - INFO - Completed page 67/100 (68/100 processed)
+2026-08-22 02:17:01,668 - INFO - Page 68: found 15 player-list-item elements
+2026-08-22 02:17:01,996 - INFO - Completed page 68/100 (69/100 processed)
+2026-08-22 02:17:01,997 - INFO - Batch complete: added 45 new players (total unique: 1032)
+2026-08-22 02:17:02,000 - INFO - Processing batch: pages 70-72
+2026-08-22 02:17:02,000 - INFO - Fetching page 70...
+2026-08-22 02:17:02,005 - INFO - Fetching page 71...
+2026-08-22 02:17:02,007 - INFO - Fetching page 72...
+2026-08-22 02:17:03,124 - INFO - Page 71: found 15 player-list-item elements
+2026-08-22 02:17:03,197 - INFO - Page 72: found 15 player-list-item elements
+2026-08-22 02:17:03,241 - INFO - Page 70: found 15 player-list-item elements
+2026-08-22 02:17:03,580 - INFO - Completed page 72/100 (70/100 processed)
+2026-08-22 02:17:03,594 - INFO - Completed page 71/100 (71/100 processed)
+2026-08-22 02:17:03,607 - INFO - Completed page 70/100 (72/100 processed)
+2026-08-22 02:17:03,624 - INFO - Batch complete: added 45 new players (total unique: 1077)
+2026-08-22 02:17:03,626 - INFO - Processing batch: pages 73-75
+2026-08-22 02:17:03,628 - INFO - Fetching page 73...
+2026-08-22 02:17:03,631 - INFO - Fetching page 74...
+2026-08-22 02:17:03,638 - INFO - Fetching page 75...
+2026-08-22 02:17:04,338 - INFO - Page 75: found 15 player-list-item elements
+2026-08-22 02:17:04,567 - INFO - Page 73: found 15 player-list-item elements
+2026-08-22 02:17:04,643 - INFO - Page 74: found 15 player-list-item elements
+2026-08-22 02:17:04,790 - INFO - Completed page 75/100 (73/100 processed)
+2026-08-22 02:17:04,917 - INFO - Completed page 73/100 (74/100 processed)
+2026-08-22 02:17:05,011 - INFO - Completed page 74/100 (75/100 processed)
+2026-08-22 02:17:05,012 - INFO - Batch complete: added 45 new players (total unique: 1122)
+2026-08-22 02:17:05,014 - INFO - Processing batch: pages 76-78
+2026-08-22 02:17:05,015 - INFO - Fetching page 76...
+2026-08-22 02:17:05,015 - INFO - Fetching page 77...
+2026-08-22 02:17:05,016 - INFO - Fetching page 78...
+2026-08-22 02:17:05,752 - INFO - Page 77: found 15 player-list-item elements
+2026-08-22 02:17:05,823 - INFO - Page 78: found 15 player-list-item elements
+2026-08-22 02:17:06,021 - INFO - Page 76: found 15 player-list-item elements
+2026-08-22 02:17:06,131 - INFO - Completed page 77/100 (76/100 processed)
+2026-08-22 02:17:06,177 - INFO - Completed page 78/100 (77/100 processed)
+2026-08-22 02:17:06,362 - INFO - Completed page 76/100 (78/100 processed)
+2026-08-22 02:17:06,365 - INFO - Batch complete: added 45 new players (total unique: 1167)
+2026-08-22 02:17:06,367 - INFO - Processing batch: pages 79-81
+2026-08-22 02:17:06,367 - INFO - Fetching page 79...
+2026-08-22 02:17:06,369 - INFO - Fetching page 80...
+2026-08-22 02:17:06,370 - INFO - Fetching page 81...
+2026-08-22 02:17:07,051 - INFO - Page 80: found 15 player-list-item elements
+2026-08-22 02:17:07,342 - INFO - Page 79: found 15 player-list-item elements
+2026-08-22 02:17:07,403 - INFO - Completed page 80/100 (79/100 processed)
+2026-08-22 02:17:07,475 - INFO - Page 81: found 15 player-list-item elements
+2026-08-22 02:17:07,710 - INFO - Completed page 79/100 (80/100 processed)
+2026-08-22 02:17:07,811 - INFO - Completed page 81/100 (81/100 processed)
+2026-08-22 02:17:07,812 - INFO - Batch complete: added 45 new players (total unique: 1212)
+2026-08-22 02:17:07,814 - INFO - Processing batch: pages 82-84
+2026-08-22 02:17:07,816 - INFO - Fetching page 82...
+2026-08-22 02:17:07,816 - INFO - Fetching page 83...
+2026-08-22 02:17:07,817 - INFO - Fetching page 84...
+2026-08-22 02:17:08,482 - INFO - Page 82: found 15 player-list-item elements
+2026-08-22 02:17:08,527 - INFO - Page 84: found 15 player-list-item elements
+2026-08-22 02:17:08,587 - INFO - Page 83: found 15 player-list-item elements
+2026-08-22 02:17:08,849 - INFO - Completed page 82/100 (82/100 processed)
+2026-08-22 02:17:08,891 - INFO - Completed page 84/100 (83/100 processed)
+2026-08-22 02:17:08,916 - INFO - Completed page 83/100 (84/100 processed)
+2026-08-22 02:17:08,924 - INFO - Batch complete: added 45 new players (total unique: 1257)
+2026-08-22 02:17:08,927 - INFO - Processing batch: pages 85-87
+2026-08-22 02:17:08,928 - INFO - Fetching page 85...
+2026-08-22 02:17:08,930 - INFO - Fetching page 86...
+2026-08-22 02:17:08,931 - INFO - Fetching page 87...
+2026-08-22 02:17:09,944 - INFO - Page 86: found 15 player-list-item elements
+2026-08-22 02:17:09,956 - INFO - Page 85: found 15 player-list-item elements
+2026-08-22 02:17:10,000 - INFO - Page 87: found 15 player-list-item elements
+2026-08-22 02:17:10,295 - INFO - Completed page 86/100 (85/100 processed)
+2026-08-22 02:17:10,392 - INFO - Completed page 85/100 (86/100 processed)
+2026-08-22 02:17:10,402 - INFO - Completed page 87/100 (87/100 processed)
+2026-08-22 02:17:10,484 - INFO - Batch complete: added 45 new players (total unique: 1302)
+2026-08-22 02:17:10,489 - INFO - Processing batch: pages 88-90
+2026-08-22 02:17:10,492 - INFO - Fetching page 88...
+2026-08-22 02:17:10,498 - INFO - Fetching page 89...
+2026-08-22 02:17:10,501 - INFO - Fetching page 90...
+2026-08-22 02:17:11,559 - INFO - Page 89: found 15 player-list-item elements
+2026-08-22 02:17:11,598 - INFO - Page 90: found 15 player-list-item elements
+2026-08-22 02:17:11,640 - INFO - Page 88: found 15 player-list-item elements
+2026-08-22 02:17:11,916 - INFO - Completed page 89/100 (88/100 processed)
+2026-08-22 02:17:11,971 - INFO - Completed page 90/100 (89/100 processed)
+2026-08-22 02:17:11,995 - INFO - Completed page 88/100 (90/100 processed)
+2026-08-22 02:17:11,996 - INFO - Batch complete: added 45 new players (total unique: 1347)
+2026-08-22 02:17:11,999 - INFO - Processing batch: pages 91-93
+2026-08-22 02:17:12,000 - INFO - Fetching page 91...
+2026-08-22 02:17:12,000 - INFO - Fetching page 92...
+2026-08-22 02:17:12,001 - INFO - Fetching page 93...
+2026-08-22 02:17:13,947 - INFO - Page 91: found 15 player-list-item elements
+2026-08-22 02:17:14,072 - INFO - Page 93: found 15 player-list-item elements
+2026-08-22 02:17:14,075 - INFO - Page 92: found 15 player-list-item elements
+2026-08-22 02:17:14,369 - INFO - Completed page 91/100 (91/100 processed)
+2026-08-22 02:17:14,441 - INFO - Completed page 93/100 (92/100 processed)
+2026-08-22 02:17:14,442 - INFO - Completed page 92/100 (93/100 processed)
+2026-08-22 02:17:14,443 - INFO - Batch complete: added 45 new players (total unique: 1392)
+2026-08-22 02:17:14,445 - INFO - Processing batch: pages 94-96
+2026-08-22 02:17:14,445 - INFO - Fetching page 94...
+2026-08-22 02:17:14,446 - INFO - Fetching page 95...
+2026-08-22 02:17:14,447 - INFO - Fetching page 96...
+2026-08-22 02:17:14,749 - INFO - Page 94: found 15 player-list-item elements
+2026-08-22 02:17:15,111 - INFO - Page 96: found 15 player-list-item elements
+2026-08-22 02:17:15,129 - INFO - Completed page 94/100 (94/100 processed)
+2026-08-22 02:17:15,220 - INFO - Page 95: found 15 player-list-item elements
+2026-08-22 02:17:15,505 - INFO - Completed page 96/100 (95/100 processed)
+2026-08-22 02:17:15,586 - INFO - Completed page 95/100 (96/100 processed)
+2026-08-22 02:17:15,635 - INFO - Batch complete: added 45 new players (total unique: 1437)
+2026-08-22 02:17:15,639 - INFO - Processing batch: pages 97-99
+2026-08-22 02:17:15,639 - INFO - Fetching page 97...
+2026-08-22 02:17:15,641 - INFO - Fetching page 98...
+2026-08-22 02:17:15,641 - INFO - Fetching page 99...
+2026-08-22 02:17:16,133 - INFO - Page 97: found 15 player-list-item elements
+2026-08-22 02:17:16,418 - INFO - Page 98: found 15 player-list-item elements
+2026-08-22 02:17:16,548 - INFO - Completed page 97/100 (97/100 processed)
+2026-08-22 02:17:16,749 - INFO - Completed page 98/100 (98/100 processed)
+2026-08-22 02:17:16,754 - INFO - Page 99: found 15 player-list-item elements
+2026-08-22 02:17:17,076 - INFO - Completed page 99/100 (99/100 processed)
+2026-08-22 02:17:17,077 - INFO - Batch complete: added 45 new players (total unique: 1482)
+2026-08-22 02:17:17,087 - INFO - Processing batch: pages 100-100
+2026-08-22 02:17:17,088 - INFO - Fetching page 100...
+2026-08-22 02:17:17,420 - INFO - Page 100: found 15 player-list-item elements
+2026-08-22 02:17:17,742 - INFO - Completed page 100/100 (100/100 processed)
+2026-08-22 02:17:17,766 - INFO - Batch complete: added 15 new players (total unique: 1497)
+2026-08-22 02:17:17,769 - INFO - Parallel scrape completed in 44.49s (0.74 minutes)
+2026-08-22 02:17:17,769 - INFO - Processed 100 pages with 0 errors
+2026-08-22 02:17:17,769 - INFO - Total unique players: 1497
+2026-08-22 02:17:17,772 - INFO - Cleared progress file
+2026-08-22 02:17:17,772 - INFO - Exporting data...
+2026-08-22 02:17:17,776 - INFO - Saved 1497 players to ../Data/external_ids.json
+2026-08-22 02:17:17,794 - INFO - Saved 1497 players to ../Data/external_ids.csv
+2026-08-22 02:17:17,807 - INFO - Saved 1497 external IDs to ../Data/external_ids.txt
+2026-08-22 02:17:17,815 - INFO - Saved 1497 external IDs to ../Data/external_ids.js
+2026-08-22 02:17:17,815 - INFO - ============================================================
+2026-08-22 02:17:17,815 - INFO - SCRAPER SUMMARY
+2026-08-22 02:17:17,816 - INFO - ============================================================
+2026-08-22 02:17:17,816 - INFO - Total players scraped: 1497
+2026-08-22 02:17:17,817 - INFO - Total time elapsed: 44.53s (0.74 minutes)
+2026-08-22 02:17:17,817 - INFO - Average rate: 33.62 players/second
+2026-08-22 02:17:17,818 - INFO - Players with prices: 0
+2026-08-22 02:17:17,818 - INFO - Exported files: 4
+2026-08-22 02:17:17,820 - INFO -   - ../Data/external_ids.json
+2026-08-22 02:17:17,821 - INFO -   - ../Data/external_ids.csv
+2026-08-22 02:17:17,821 - INFO -   - ../Data/external_ids.txt
+2026-08-22 02:17:17,822 - INFO -   - ../Data/external_ids.js
+2026-08-22 02:17:17,822 - INFO - ============================================================
+2026-08-22 02:17:17,823 - INFO - Scraping completed successfully!

@@ -1,0 +1,28 @@
+accounts.ea.com/54.243.122.21:443
+
+https://accounts.ea.com:443
+
+https://us-assets.i.posthog.com:443
+
+https://eaaccounts.akamaized.net:443
+
+
+gateway.ea.com:443 
+
+
+curl --url 'https://us-assets.i.posthog.com/array/phc_mTG5CzwKeksAWmiww4eamcwVkAazixCmtKYaYkGXGGjo/config.js' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: no-cache' \
+  -H 'dnt: 1' \
+  -H 'origin: https://mutalpha.com' \
+  -H 'pragma: no-cache' \
+  -H 'referer: https://mutalpha.com/' \
+  -H 'sec-ch-ua: "Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: script' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
+

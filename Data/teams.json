@@ -1,0 +1,260 @@
+{
+  "data": [
+    {
+      "id": 8,
+      "externalId": null,
+      "name": "Cardinals",
+      "abbreviation": "ARI",
+      "logoUrl": null,
+      "hash": "0971c3f61e32df4abddd11110ef93c14"
+    },
+    {
+      "id": 15,
+      "externalId": null,
+      "name": "Falcons",
+      "abbreviation": "ATL",
+      "logoUrl": null,
+      "hash": "4d51cabb05002ef0a32861af5e583705"
+    },
+    {
+      "id": 26,
+      "externalId": null,
+      "name": "Ravens",
+      "abbreviation": "BAL",
+      "logoUrl": null,
+      "hash": "9f9951dfef7de414c4064b15f2c56202"
+    },
+    {
+      "id": 4,
+      "externalId": null,
+      "name": "Bills",
+      "abbreviation": "BUF",
+      "logoUrl": null,
+      "hash": "a24709e2c2fa080862f67dbca3f9dbc4"
+    },
+    {
+      "id": 22,
+      "externalId": null,
+      "name": "Panthers",
+      "abbreviation": "CAR",
+      "logoUrl": null,
+      "hash": "08db7301819f623b9eabd1b1e3ad449d"
+    },
+    {
+      "id": 2,
+      "externalId": null,
+      "name": "Bears",
+      "abbreviation": "CHI",
+      "logoUrl": null,
+      "hash": "ec3a2a8ed28b6009a64e95ca34e5572c"
+    },
+    {
+      "id": 3,
+      "externalId": null,
+      "name": "Bengals",
+      "abbreviation": "CIN",
+      "logoUrl": null,
+      "hash": "b21b232277432f0e6cd73e2052e0c960"
+    },
+    {
+      "id": 6,
+      "externalId": null,
+      "name": "Browns",
+      "abbreviation": "CLE",
+      "logoUrl": null,
+      "hash": "4587f0f4e76797f61ef6013225f6cde4"
+    },
+    {
+      "id": 12,
+      "externalId": null,
+      "name": "Cowboys",
+      "abbreviation": "DAL",
+      "logoUrl": null,
+      "hash": "55931c600bf256caa92437ef56267465"
+    },
+    {
+      "id": 5,
+      "externalId": null,
+      "name": "Broncos",
+      "abbreviation": "DEN",
+      "logoUrl": null,
+      "hash": "0f0eba0804520935811274702f396c15"
+    },
+    {
+      "id": 20,
+      "externalId": null,
+      "name": "Lions",
+      "abbreviation": "DET",
+      "logoUrl": null,
+      "hash": "4bfe752539a01165ba70183e9e026a23"
+    },
+    {
+      "id": 21,
+      "externalId": null,
+      "name": "Packers",
+      "abbreviation": "GB",
+      "logoUrl": null,
+      "hash": "2c8d32d8ff62c726f234279d596cf911"
+    },
+    {
+      "id": 33,
+      "externalId": null,
+      "name": "Texans",
+      "abbreviation": "HOU",
+      "logoUrl": null,
+      "hash": "dd971ff43a3ecd23a47e29df4f147793"
+    },
+    {
+      "id": 11,
+      "externalId": null,
+      "name": "Colts",
+      "abbreviation": "IND",
+      "logoUrl": null,
+      "hash": "428316e1df7ad8106d820495cc549176"
+    },
+    {
+      "id": 18,
+      "externalId": null,
+      "name": "Jaguars",
+      "abbreviation": "JAX",
+      "logoUrl": null,
+      "hash": "c86b6b87ae5c3ecadece4237f59ba583"
+    },
+    {
+      "id": 10,
+      "externalId": null,
+      "name": "Chiefs",
+      "abbreviation": "KC",
+      "logoUrl": null,
+      "hash": "4bdb669a4b3097106446f3d2e1e4e719"
+    },
+    {
+      "id": 24,
+      "externalId": null,
+      "name": "Raiders",
+      "abbreviation": "LV",
+      "logoUrl": null,
+      "hash": "9d6d3e0c2aa0816c90b97a549499e755"
+    },
+    {
+      "id": 9,
+      "externalId": null,
+      "name": "Chargers",
+      "abbreviation": "LAC",
+      "logoUrl": null,
+      "hash": "0c0c2ccd3867622971f5e96361372ec4"
+    },
+    {
+      "id": 25,
+      "externalId": null,
+      "name": "Rams",
+      "abbreviation": "LAR",
+      "logoUrl": null,
+      "hash": "fc7d600080f56fb46d87389b454799fa"
+    },
+    {
+      "id": 13,
+      "externalId": null,
+      "name": "Dolphins",
+      "abbreviation": "MIA",
+      "logoUrl": null,
+      "hash": "a2ad426ac07766554e44c42fb92fa6d7"
+    },
+    {
+      "id": 32,
+      "externalId": null,
+      "name": "Vikings",
+      "abbreviation": "MIN",
+      "logoUrl": null,
+      "hash": "c1d23d4dbbe48021b1abe21831f12a64"
+    },
+    {
+      "id": 23,
+      "externalId": null,
+      "name": "Patriots",
+      "abbreviation": "NE",
+      "logoUrl": null,
+      "hash": "c0def76054ac62d2f2fa0cafbadbad04"
+    },
+    {
+      "id": 28,
+      "externalId": null,
+      "name": "Saints",
+      "abbreviation": "NO",
+      "logoUrl": null,
+      "hash": "fbc7f6a9397e1c2279a010aae198b896"
+    },
+    {
+      "id": 17,
+      "externalId": null,
+      "name": "Giants",
+      "abbreviation": "NYG",
+      "logoUrl": null,
+      "hash": "9cb911581477a944d3900f43ed2ae981"
+    },
+    {
+      "id": 19,
+      "externalId": null,
+      "name": "Jets",
+      "abbreviation": "NYJ",
+      "logoUrl": null,
+      "hash": "18186d849e18564c43097af4b802f110"
+    },
+    {
+      "id": 14,
+      "externalId": null,
+      "name": "Eagles",
+      "abbreviation": "PHI",
+      "logoUrl": null,
+      "hash": "5599ab4282fab09bcb54b73642adfad4"
+    },
+    {
+      "id": 30,
+      "externalId": null,
+      "name": "Steelers",
+      "abbreviation": "PIT",
+      "logoUrl": null,
+      "hash": "59507fd7ab907028613cb7d366ec6d29"
+    },
+    {
+      "id": 16,
+      "externalId": null,
+      "name": "49ers",
+      "abbreviation": "SF",
+      "logoUrl": null,
+      "hash": "a4daccc80f8ea2fe1b29f528b2d101b4"
+    },
+    {
+      "id": 29,
+      "externalId": null,
+      "name": "Seahawks",
+      "abbreviation": "SEA",
+      "logoUrl": null,
+      "hash": "0c129d58fc29bdb2c5179b638b483f20"
+    },
+    {
+      "id": 7,
+      "externalId": null,
+      "name": "Buccaneers",
+      "abbreviation": "TB",
+      "logoUrl": null,
+      "hash": "620dbaa933a5eb92d091b7972b67cc24"
+    },
+    {
+      "id": 31,
+      "externalId": null,
+      "name": "Titans",
+      "abbreviation": "TEN",
+      "logoUrl": null,
+      "hash": "b465d1e92bcdef1b54d01b6aca5694d5"
+    },
+    {
+      "id": 27,
+      "externalId": null,
+      "name": "Commanders",
+      "abbreviation": "WAS",
+      "logoUrl": null,
+      "hash": "b5cb95ce180bf86ec116c0b796d7aaa4"
+    }
+  ]
+}
